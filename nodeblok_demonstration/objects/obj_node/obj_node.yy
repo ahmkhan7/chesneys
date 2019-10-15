@@ -5,16 +5,6 @@
     "name": "obj_node",
     "eventList": [
         {
-            "id": "c5842648-94c2-4274-9b86-3e1c727db14c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 6,
-            "m_owner": "3e1e06c9-5891-4d0b-be56-babed0f9b11c"
-        },
-        {
             "id": "d8469f7c-6671-4e06-a6f1-b0f88cedb605",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -32,6 +22,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
+            "m_owner": "3e1e06c9-5891-4d0b-be56-babed0f9b11c"
+        },
+        {
+            "id": "8617d0ae-c4d4-45b0-8559-0cd1edd194a3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 7,
+            "eventtype": 6,
             "m_owner": "3e1e06c9-5891-4d0b-be56-babed0f9b11c"
         }
     ],
@@ -65,6 +65,62 @@
             "value": "0",
             "varName": "state",
             "varType": 1
+        },
+        {
+            "id": "4567993d-ef10-4b65-a74a-74523bf5a097",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "row",
+            "varType": 1
+        },
+        {
+            "id": "7b4ca944-2bcb-4ff7-bea4-2671d01167d2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "[0,0]",
+            "varName": "target",
+            "varType": 0
+        },
+        {
+            "id": "f8490667-3be3-4c7d-afab-f1b2f8986510",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "[[0,0], [100,100]]",
+            "varName": "targetList",
+            "varType": 0
+        },
+        {
+            "id": "7d0d391a-ec2d-40f9-b7e3-a4a51f9860f8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "currentTarget",
+            "varType": 0
         }
     ],
     "solid": false,
