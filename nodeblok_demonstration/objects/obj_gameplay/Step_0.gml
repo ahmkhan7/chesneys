@@ -2,6 +2,10 @@
 //Demonstration only, no cooldown for spawns
 //Set number of squares spawn (one)
 //Collision with stations do nothing (yet)
+//Spawner spawns squares at constant rate for now from spawner object
+
+
+
 
 /*
 if(spawns < num_square_spawns) {
@@ -13,9 +17,9 @@ if(spawns < num_square_spawns) {
 	spawns++
 }
 */
-if (spawns < num_square_spawns)
+/*if (spawns < num_square_spawns)
 {
 	instance_create_depth(obj_square_spawner.x, obj_square_spawner.y, 3, obj_square);
 	spawns++;
 }
-
+*/
