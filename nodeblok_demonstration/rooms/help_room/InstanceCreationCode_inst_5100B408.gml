@@ -1,0 +1,1 @@
+text = "In NodeBlok, shapes will spawn out of blocks at the top of the screen. \n You need to navigate the shapes get to the matching blocks. \n You can do this using nodes. \n Nodes point towards the direction shapes will follow. \n You can click on a node to change which way it is pointing."
