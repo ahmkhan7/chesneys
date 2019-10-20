@@ -52,20 +52,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "b635f26f-d1a2-49e0-8e38-accc0da1bd07",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "\"Please don't murder anyone -The Park Ranger\"",
-            "varName": "text",
-            "varType": 2
-        }
+        
     ],
     "solid": false,
     "spriteId": "ad73bd43-d548-433a-924e-8e299637134e",

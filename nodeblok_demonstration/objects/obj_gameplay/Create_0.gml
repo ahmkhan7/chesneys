@@ -1,12 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+randomize();
+cooldown = 30;
+
 //spawns = 0;
 //num_square_spawns = 1;
-
-
-
-
-
 
 /*
 more old code for level generation. not a concern until beta or omega.
