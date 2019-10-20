@@ -59,5 +59,5 @@ confirmButt = vk_enter;
 
 // Buttons for Mouse Override
 menu_itemheight = font_get_size(fnt_menu);
-menu_bottom = ((height/2)-200)+(spacing*array_length_1d(global.menu));
-menu_top = (height/2)-200;
+menu_top = (height/2-150);
+menu_bottom = menu_top + (spacing*array_length_1d(global.menu));

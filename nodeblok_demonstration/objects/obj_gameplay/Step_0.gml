@@ -1,25 +1,22 @@
-/// @description Gameplay
-//Demonstration only, no cooldown for spawns
-//Set number of squares spawn (one)
-//Collision with stations do nothing (yet)
-//Spawner spawns squares at constant rate for now from spawner object
-
-
-
-
-/*
-if(spawns < num_square_spawns) {
-	square[spawns] = instance_create_depth(obj_square_spawner.x, obj_square_spawner.y, 3, obj_square);
-	with(square[spawns]) {
-		point_direction(0, 0, obj_node.x, obj_node.y); //Move towards the node
-		speed = 3;
-	}
-	spawns++
+//Deals with generation of the blocks/spawn cooldown
+//Win conditions of each room
+switch(room) {
+	case tutorial_room:
+		if(score == 50) {
+			obj_Transition.target = tutorial_room2; SlideTransition(TRANS_MODE.GOTO); 
+			score = 0;
+		}
+		break;
+	case tutorial_room2:
+		if(score == 100) {
+			obj_Transition.target = tutorial_room3; SlideTransition(TRANS_MODE.GOTO); 
+			score = 0;
+		}
+		break;
+	case tutorial_room3:
+		if(score == 150) {
+			obj_Transition.target = menu_room; SlideTransition(TRANS_MODE.GOTO); 
+			score = 0;
+		}
+		break;
 }
-*/
-/*if (spawns < num_square_spawns)
-{
-	instance_create_depth(obj_square_spawner.x, obj_square_spawner.y, 3, obj_square);
-	spawns++;
-}
-*/

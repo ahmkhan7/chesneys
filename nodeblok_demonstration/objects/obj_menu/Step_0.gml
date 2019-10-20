@@ -5,7 +5,6 @@ cursorLevitate = 8*dsin(cursorTime);
 // to oscillate cursor
 cursorTime += leviRate;
 
-
 // Vertical input is determined by the press of up
 // and down buttons
 var vert =  (keyboard_check_pressed(downButt)) -  (keyboard_check_pressed(upButt));
@@ -50,9 +49,19 @@ if(keyboard_check_pressed(confirmButt))
 // Attempting Mouse Over Menu Overide
 
 var mouse_y_gui = mouse_y;
-	if (mouse_y_gui < menu_bottom) && (mouse_y_gui > menu_top) 
+var mouse_x_gui = mouse_x;
+	if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 642 && mouse_x_gui <= 1305)
 	{
-		//selected = int64((menu_bottom - mouse_y_gui) / (menu_itemheight + spacing));
+		//selected = floor((mouse_y_gui - menu_top) / (menu_bottom - menu_top));
+		if(mouse_y_gui >= menu_top && mouse_y_gui < menu_top + spacing) {
+			selected = 0;
+		} else if (mouse_y_gui >= menu_top + spacing && mouse_y_gui < menu_top + spacing * 2) {
+			selected = 1;
+		} else if (mouse_y_gui >= menu_top + spacing * 2 && mouse_y_gui < menu_top + spacing * 3) {
+			selected = 2;
+		} else if (mouse_y_gui >= menu_top + spacing * 3 && mouse_y_gui < menu_bottom) {
+			selected = 3;
+		}
 		
 		selectLerp = lerp(selectLerp, selected, lerpAmt); // Smooth cursor movement
 		

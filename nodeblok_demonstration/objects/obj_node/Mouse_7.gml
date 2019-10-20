@@ -2,16 +2,11 @@
 // You can write your code in this editor
 
 if (currentTarget < array_length_1d(targetList) - 1)
-{
 	currentTarget++;
-}
 else
-{
 	currentTarget = 0;
-}
-
+	
 target = targetList[currentTarget];
-
 /* DONT WORRY ABOUT THIS CODE: IT IS OLD BUT SHOULD BE SAVED IN CASE IT WILL BE MODIFIED FOR LEVEL GENERATION
 if (finalNode) //if the node should point to a station, this code will run.
 {

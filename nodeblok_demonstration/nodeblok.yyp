@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "085753d3-52a8-41f3-ab1e-2a0a93bb68c4",
+            "Value": {
+                "id": "9dce8a07-06ab-427e-b6ae-ed30d15a2bbb",
+                "resourcePath": "objects\\obj_triangle\\obj_triangle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0c1954ac-5c22-495f-8c9b-33778fd9e1ef",
             "Value": {
                 "id": "4431e01e-d312-441b-b5e9-7f77944604bb",
@@ -52,6 +60,14 @@
                 "id": "e3e68e9a-c090-4600-b737-7fbb3dfdc37e",
                 "resourcePath": "objects\/obj_square_spawner\/obj_square_spawner.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "16f64781-9ebc-4b42-9102-6626d5acc948",
+            "Value": {
+                "id": "54eed577-6845-4a23-b1a6-6bd58af74576",
+                "resourcePath": "scripts\\instance_nth_nearest\\instance_nth_nearest.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -99,6 +115,14 @@
             "Value": {
                 "id": "b5e4e296-c52d-428c-873e-05cc66c4c585",
                 "resourcePath": "sprites\/spr_path\/spr_path.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "35102932-c2b0-41c9-b870-23929cdcb972",
+            "Value": {
+                "id": "e34b1dcf-333c-4e19-8e5d-94e0de99d22c",
+                "resourcePath": "sprites\\spr_triangle\\spr_triangle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -191,6 +215,14 @@
             }
         },
         {
+            "Key": "6b0b74df-6cd7-405f-a901-6d7fb88b1ce8",
+            "Value": {
+                "id": "dd4ed375-400e-4b59-961d-14a980cf3647",
+                "resourcePath": "rooms\\tutorial_room2\\tutorial_room2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "6fdee80a-1946-4a98-be22-07873b6e874b",
             "Value": {
                 "id": "a1d8a144-bd8a-4787-8931-1f696751895e",
@@ -219,6 +251,14 @@
             "Value": {
                 "id": "930519d0-47db-4b47-bc65-12e916293b5a",
                 "resourcePath": "objects\/obj_menu\/obj_menu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "83413635-c798-4a67-9b5d-f39b79a3ee2f",
+            "Value": {
+                "id": "146a6548-aea4-46fc-b654-7791d1cc0e71",
+                "resourcePath": "objects\\obj_triangle_spawner\\obj_triangle_spawner.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -292,6 +332,14 @@
                 "id": "dc069deb-097a-4118-aeb6-34db663b7ee7",
                 "resourcePath": "views\/9e7247b2-e394-482e-95ec-bdd65cdfac68.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9f7c7248-64ad-4cd7-be3b-83f492d825b4",
+            "Value": {
+                "id": "cfe26869-f5b5-4141-a4d9-0443b0c9e8f1",
+                "resourcePath": "objects\\obj_triangle_station\\obj_triangle_station.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -495,11 +543,27 @@
             }
         },
         {
+            "Key": "f36fd5b6-21ad-4d32-a0ea-e5c732fa666d",
+            "Value": {
+                "id": "dfef3bf8-feb9-4ac7-9cd9-5fdb924e8d0e",
+                "resourcePath": "sprites\\spr_triangle_spawner\\spr_triangle_spawner.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "4fdeb147-b916-4c7e-aed0-6f564f503e97",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f52aad99-1121-4262-9170-c2d9848780a5",
+            "Value": {
+                "id": "2737210b-b7d1-4de2-b766-7d9ae540362b",
+                "resourcePath": "rooms\\tutorial_room3\\tutorial_room3.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -521,7 +585,8 @@
     ],
     "script_order": [
         "3bd44c57-8dfb-4495-a57b-64f44f36be79",
-        "ad633486-4e40-46a5-a58e-d97ef6df87fc"
+        "ad633486-4e40-46a5-a58e-d97ef6df87fc",
+        "16f64781-9ebc-4b42-9102-6626d5acc948"
     ],
     "tutorial": ""
 }
