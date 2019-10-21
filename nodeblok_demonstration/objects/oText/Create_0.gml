@@ -6,4 +6,4 @@ text_current = "";
 w = 0;
 h = 0;
 border = 10;
-
+oGuide.sprite_index = spr_conductor_talk;

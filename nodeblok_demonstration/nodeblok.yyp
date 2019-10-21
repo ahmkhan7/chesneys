@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "8a4cd7c6-c6d7-449e-bbc9-03da37f39ed0",
+            "Value": {
+                "id": "5bbcc2fd-b36d-4e94-9880-0380df75bb66",
+                "resourcePath": "sprites\\spr_conductor\\spr_conductor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8a7f0431-93ac-45a2-80d8-eda276c73835",
             "Value": {
                 "id": "71a4c192-7517-4e53-ac1a-c35d100ebce1",
@@ -436,6 +444,14 @@
                 "id": "f7a07e85-cfa4-4b77-9e9f-c0f549672824",
                 "resourcePath": "objects\/obj_HowToPlay\/obj_HowToPlay.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bc49977d-e6af-483b-aaee-a4c8935fe4f4",
+            "Value": {
+                "id": "69cd1638-42f7-41f2-b5c0-049291cdf0dc",
+                "resourcePath": "sprites\\spr_conductor_talk\\spr_conductor_talk.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
