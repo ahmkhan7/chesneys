@@ -1,10 +1,6 @@
 // Menu element names. This will be what is actually drawn
-global.options[0] = "Music: On";
-global.options[1] = "Sound Effects: On";
-global.options[2] = "Full Screen: On";
-global.options[3] = "Exit to Menu";
+global.howtoplay[0] = "Exit to Menu";
 //Boolean for sound effects on/off
-global.sound_on = true;
 
 //Getting the width and height of the GUI
 height = room_height;
@@ -60,5 +56,5 @@ downButt = vk_down;
 confirmButt = vk_enter;
 
 menu_itemheight = font_get_size(fnt_menu);
-menu_top = (height/2-150);
-menu_bottom = menu_top + (spacing*array_length_1d(global.menu));
+menu_top = (height/10);
+menu_bottom = menu_top + menu_itemheight*4;

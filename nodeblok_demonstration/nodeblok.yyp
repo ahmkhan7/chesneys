@@ -42,7 +42,7 @@
             "Key": "085753d3-52a8-41f3-ab1e-2a0a93bb68c4",
             "Value": {
                 "id": "9dce8a07-06ab-427e-b6ae-ed30d15a2bbb",
-                "resourcePath": "objects\\obj_triangle\\obj_triangle.yy",
+                "resourcePath": "objects\/obj_triangle\/obj_triangle.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -66,7 +66,7 @@
             "Key": "16f64781-9ebc-4b42-9102-6626d5acc948",
             "Value": {
                 "id": "54eed577-6845-4a23-b1a6-6bd58af74576",
-                "resourcePath": "scripts\\instance_nth_nearest\\instance_nth_nearest.yy",
+                "resourcePath": "scripts\/instance_nth_nearest\/instance_nth_nearest.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -122,7 +122,7 @@
             "Key": "35102932-c2b0-41c9-b870-23929cdcb972",
             "Value": {
                 "id": "e34b1dcf-333c-4e19-8e5d-94e0de99d22c",
-                "resourcePath": "sprites\\spr_triangle\\spr_triangle.yy",
+                "resourcePath": "sprites\/spr_triangle\/spr_triangle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -218,7 +218,7 @@
             "Key": "6b0b74df-6cd7-405f-a901-6d7fb88b1ce8",
             "Value": {
                 "id": "dd4ed375-400e-4b59-961d-14a980cf3647",
-                "resourcePath": "rooms\\tutorial_room2\\tutorial_room2.yy",
+                "resourcePath": "rooms\/tutorial_room2\/tutorial_room2.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -258,7 +258,7 @@
             "Key": "83413635-c798-4a67-9b5d-f39b79a3ee2f",
             "Value": {
                 "id": "146a6548-aea4-46fc-b654-7791d1cc0e71",
-                "resourcePath": "objects\\obj_triangle_spawner\\obj_triangle_spawner.yy",
+                "resourcePath": "objects\/obj_triangle_spawner\/obj_triangle_spawner.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -338,7 +338,7 @@
             "Key": "9f7c7248-64ad-4cd7-be3b-83f492d825b4",
             "Value": {
                 "id": "cfe26869-f5b5-4141-a4d9-0443b0c9e8f1",
-                "resourcePath": "objects\\obj_triangle_station\\obj_triangle_station.yy",
+                "resourcePath": "objects\/obj_triangle_station\/obj_triangle_station.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -419,6 +419,14 @@
             "Value": {
                 "id": "8693aa62-6891-446c-81c3-2e6569ddbe83",
                 "resourcePath": "objects\/obJ_score\/obJ_score.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bbc70b5c-b458-4c52-896f-f6a18ab0f397",
+            "Value": {
+                "id": "f7a07e85-cfa4-4b77-9e9f-c0f549672824",
+                "resourcePath": "objects\/obj_HowToPlay\/obj_HowToPlay.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -546,7 +554,7 @@
             "Key": "f36fd5b6-21ad-4d32-a0ea-e5c732fa666d",
             "Value": {
                 "id": "dfef3bf8-feb9-4ac7-9cd9-5fdb924e8d0e",
-                "resourcePath": "sprites\\spr_triangle_spawner\\spr_triangle_spawner.yy",
+                "resourcePath": "sprites\/spr_triangle_spawner\/spr_triangle_spawner.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -562,7 +570,7 @@
             "Key": "f52aad99-1121-4262-9170-c2d9848780a5",
             "Value": {
                 "id": "2737210b-b7d1-4de2-b766-7d9ae540362b",
-                "resourcePath": "rooms\\tutorial_room3\\tutorial_room3.yy",
+                "resourcePath": "rooms\/tutorial_room3\/tutorial_room3.yy",
                 "resourceType": "GMRoom"
             }
         },
