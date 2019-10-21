@@ -2,6 +2,7 @@
 // You can write your code in this editor
 randomize();
 cooldown = 30;
+start = 0;
 
 //spawns = 0;
 //num_square_spawns = 1;

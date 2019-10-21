@@ -61,3 +61,5 @@ confirmButt = vk_enter;
 menu_itemheight = font_get_size(fnt_menu);
 menu_top = (height/2-150);
 menu_bottom = menu_top + (spacing*array_length_1d(global.menu));
+
+score = 0;

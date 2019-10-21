@@ -1,2 +1,2 @@
 nearby = false;
-
+clicked = false;

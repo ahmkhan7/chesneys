@@ -9,16 +9,16 @@ if(instance_number(obj_node) == 1) {
 	sqrstat_inst = instance_nearest(x, y, obj_square_station);
 	tristat_inst = instance_nearest(x, y, obj_triangle_station);
 	cirstat_inst = instance_nearest(x, y, obj_circle_station);
+	if(cirstat_inst != noone) {
+		targetList[counter] = [cirstat_inst.x, cirstat_inst.y];
+		counter++;
+	}
 	if(sqrstat_inst != noone) {
 		targetList[counter] = [sqrstat_inst.x, sqrstat_inst.y];
 		counter++;
 	}
 	if(tristat_inst != noone) {
 		targetList[counter] = [tristat_inst.x, tristat_inst.y];
-		counter++;
-	}
-	if(cirstat_inst != noone) {
-		targetList[counter] = [cirstat_inst.x, cirstat_inst.y];
 		counter++;
 	}
 }
