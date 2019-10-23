@@ -7,13 +7,12 @@ if ((point_in_circle(mouse_x,mouse_y,x,y,256)) && (!instance_exists(oText)))
 			obj_click_me.clicked = true;
 			clicked = true;
 		}
-			
+		
 		with (instance_create_layer(x,y-64,layer-1,oText))
-		{
+		{ 
 			text = other.text;
 			length = string_length(text);
 		}
-	
 
 	}
 }else nearby = false;

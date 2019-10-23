@@ -1,6 +1,7 @@
 // Menu element names. This will be what is actually drawn
-global.howtoplay[0] = "Exit to Menu";
+howtoplay[0] = "Exit to Menu";
 //Boolean for sound effects on/off
+
 
 //Getting the width and height of the GUI
 height = room_height;

@@ -15,3 +15,4 @@ if (letters >= length)
 		instance_destroy();
 	}
 }
+ 

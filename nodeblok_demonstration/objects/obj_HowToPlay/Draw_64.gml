@@ -5,7 +5,7 @@ draw_set_font(fnt_menu);
 
 
 // Loop through the array containing each menu element
-for(i = 0; i < array_length_1d(global.howtoplay); i++)
+for(var i = 0; i < array_length_1d(howtoplay); i++)
 {
 	// If you're looking at the currently selected element, 
 	// then draw it with a certain color, if not, then with
@@ -19,8 +19,10 @@ for(i = 0; i < array_length_1d(global.howtoplay); i++)
 		draw_set_color(notSelectedCol);
 	}
 	
+	//align all text to center
+	draw_set_halign(fa_center);
 	// Draw the text
-	draw_text_transformed((width/2), (height/10) + (fa_center+i*spacing)-100, global.howtoplay[i], 4, 4, 0);	
+	draw_text_transformed((width/2), (height/10) + (fa_center+(i*spacing))-100, howtoplay[i], 4, 4, 0);	
 }
 // Getting width of cursor to separate it a bit from the menu
 var cursWidth = sprite_get_width(s_cursor);
