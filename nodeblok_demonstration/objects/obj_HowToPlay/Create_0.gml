@@ -1,5 +1,5 @@
 // Menu element names. This will be what is actually drawn
-howtoplay[0] = "Exit to Menu";
+howtoplay[0] = "Exit to Menu (Enter)";
 //Boolean for sound effects on/off
 
 

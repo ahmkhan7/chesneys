@@ -20,10 +20,12 @@ selected = clamp(selected, 0, array_length_1d(howtoplay) - 1);
 // it should do depending on what menu element is selected
 if(keyboard_check_pressed(confirmButt))
 {
-	if(selected == 0) // Toggling Music on or off
+	if(selected == 0) //Go to menu
 	{
+		draw_set_alpha(0);
 		obj_Transition.target = menu_room;
 		SlideTransition(TRANS_MODE.GOTO);
+		draw_set_alpha(1);
 	}
 	
 }
@@ -32,7 +34,7 @@ if(keyboard_check_pressed(confirmButt))
 
 var mouse_y_gui = mouse_y;
 var mouse_x_gui = mouse_x;
-if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= room_height/5 && mouse_x_gui <= room_height/15)
+if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= room_height*.05 && mouse_x_gui <= room_height*.15)
 {
 	//selected = floor((mouse_y_gui - menu_top) / (menu_bottom - menu_top));
 	if(mouse_y_gui >= menu_top && mouse_y_gui < menu_top + spacing) {

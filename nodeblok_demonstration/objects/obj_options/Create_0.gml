@@ -1,7 +1,7 @@
 // Menu element names. This will be what is actually drawn
 global.options[0] = "Music: On";
 global.options[1] = "Sound Effects: On";
-global.options[2] = "Full Screen: On";
+global.options[2] = "Full Screen: Off";
 global.options[3] = "Exit to Menu";
 //Boolean for sound effects on/off
 global.sound_on = true;

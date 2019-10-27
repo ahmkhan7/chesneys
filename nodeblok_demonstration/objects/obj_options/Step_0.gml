@@ -25,13 +25,13 @@ if(keyboard_check_pressed(confirmButt))
 	{
 		if audio_is_playing(menu_music)
 		{
-			//audio_play_sound(Decline,2,false);
+		
 			audio_stop_sound(menu_music);
 			global.options[0] = "Music: Off"
 		}
 		else
 		{
-			//audio_play_sound(Accept,2,false);
+			
 			audio_play_sound(menu_music, 1, true);
 			global.options[0] = "Music: On";
 		}
@@ -41,13 +41,13 @@ if(keyboard_check_pressed(confirmButt))
 	{
 		if (global.sound_on) 
 		{
-			//audio_play_sound(Decline,2,false);
+			
 			global.sound_on = false;
 			global.options[1] = "Sound Effects: Off";
 		}
 		else
 		{
-			//audio_play_sound(Accept,2,false);
+			
 			global.sound_on = true;	
 			global.options[1] = "Sound Effects: On";
 		}
@@ -57,13 +57,13 @@ if(keyboard_check_pressed(confirmButt))
 	{
 		if window_get_fullscreen()
 		{
-			audio_play_sound(Decline,2,false);
+		
 			window_set_fullscreen(false);
 			global.options[2] = "Fullscreen: Off";
 		}
 		else
 		{
-			//audio_play_sound(Accept,2,false);
+			
 			window_set_fullscreen(true);
 			global.options[2] = "Fullscreen: On";
 		}

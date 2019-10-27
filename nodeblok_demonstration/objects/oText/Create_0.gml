@@ -1,6 +1,8 @@
 spd = 0.5;
 letters = 0;
+
 text = "This is a test string!\nSecond line!";
+
 length = string_length(text);
 text_current = "";
 w = 0;
