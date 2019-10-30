@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "c8ad3391-2fef-4d54-90cc-a685b5ccda7a",
+            "Value": {
+                "id": "4ae70fe4-6ca8-4ffa-a928-7aa89e2d6a5e",
+                "resourcePath": "sounds\\custom_music\\custom_music.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "2e4b7a89-bde9-4d95-9419-3484ce5b6ce7",

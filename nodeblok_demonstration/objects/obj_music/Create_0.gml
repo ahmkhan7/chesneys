@@ -1,2 +1,2 @@
 /// @description Audio
-if not audio_is_playing(menu_music) audio_play_sound(menu_music, 1, true);
+if not audio_is_playing(custom_music) audio_play_sound(custom_music, 1, true);
