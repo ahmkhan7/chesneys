@@ -44,7 +44,7 @@ switch(room) {
 	case tutorial_room3:
 		oGuide.text = "There can also be more than\none node to move shapes!";
 		if(score >= 300) {
-			obj_Transition.target = menu_room; SlideTransition(TRANS_MODE.GOTO); 
+			obj_Transition.target = main_room; SlideTransition(TRANS_MODE.GOTO); 
 			score = 0;
 			start = 0;
 		}
