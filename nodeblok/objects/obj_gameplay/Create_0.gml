@@ -1,26 +1,36 @@
-/// @description Insert description here
-// You can write your code in this editor
 randomize();
-cooldown = 30;
 start = 0;
+cooldown = 30;
+unlocked_recipes = 1;
 
-//spawns = 0;
-//num_square_spawns = 1;
-
-/*
-more old code for level generation. not a concern until beta or omega.
-//find stations for node pointing
-globalvar stations;
-stations = ds_list_create();//create a list which holds all the x,y for possible stations
-
-for (var i = 0; i < instance_number(obj_square_station); i++) //finds all square stations and stores the x,y of those
-{
-	otherStation = instance_find(obj_square_station, i);
-	ds_list_add(stations, [otherStation.x, otherStation.y])//add to list of stations based on x,y
-}
-for (var i = 0; i < instance_number(obj_circle_station); i++) //finds all circle stations and stores the x,y of those
-{
-	otherStation = instance_find(obj_circle_station, i);
-	ds_list_add(stations, [otherStation.x, otherStation.y])//add to list of stations based on x,y
-}
-*/
+//Create an array for the three ingredient spawner instances along the top
+ingredient_spawners = [instance_nearest(0, 0, obj_ingredient_spawner),
+					  instance_nth_nearest(0, 0, obj_ingredient_spawner, 2),
+					  instance_nth_nearest(0, 0, obj_ingredient_spawner, 3)];
+					  
+//Create an array for each recipe object
+recipe_list = [obj_rcp_salad, obj_rcp_sandwich, obj_rcp_omelette, 
+			   obj_rcp_taco, obj_rcp_smoothie, obj_rcp_spaghetti, obj_rcp_steak];
+					  
+//Create a 2D parallel array that relates each recipe to its ingredient list
+recipe_ingred_list[0, 0] = obj_lettuce; recipe_ingred_list[0, 1] = obj_carrot;
+recipe_ingred_list[0, 2] = obj_cucumber; recipe_ingred_list[0, 3] = obj_redpepper;
+recipe_ingred_list[0, 4] = obj_chicken;
+recipe_ingred_list[1, 0] = obj_bread recipe_ingred_list[1, 1] = obj_salami;
+recipe_ingred_list[1, 2] = obj_cheese; recipe_ingred_list[1, 3] = obj_lettuce;
+recipe_ingred_list[1, 4] = obj_tomato;
+recipe_ingred_list[2, 0] = obj_eggs; recipe_ingred_list[2, 1] = obj_onion;
+recipe_ingred_list[2, 2] = obj_orangepepper; recipe_ingred_list[2, 3] = obj_potato;
+recipe_ingred_list[2, 4] = obj_mushroom;
+recipe_ingred_list[3, 0] = obj_tortilla; recipe_ingred_list[3, 1] = obj_beef;
+recipe_ingred_list[3, 2] = obj_avocado; recipe_ingred_list[3, 3] = obj_cheese;
+recipe_ingred_list[3, 4] = obj_chilipepper;
+recipe_ingred_list[4, 0] = obj_milk; recipe_ingred_list[4, 1] = obj_strawberries;
+recipe_ingred_list[4, 2] = obj_bananas; recipe_ingred_list[4, 3] = obj_coconut;
+recipe_ingred_list[4, 4] = obj_honey;
+recipe_ingred_list[5, 0] = obj_noodles; recipe_ingred_list[5, 1] = obj_meatballs;
+recipe_ingred_list[5, 2] = obj_tomatosauce; recipe_ingred_list[5, 3] = obj_garlic;
+recipe_ingred_list[5, 4] = obj_cheese;
+recipe_ingred_list[6, 0] = obj_potato; recipe_ingred_list[6, 1] = obj_beef;
+recipe_ingred_list[6, 2] = obj_broccoli; recipe_ingred_list[6, 3] = obj_butter;
+recipe_ingred_list[6, 4] = obj_sauce;

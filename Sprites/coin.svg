@@ -1,0 +1,21 @@
+<?xml version="1.0"?><svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <defs>
+   <linearGradient x2="1" x1="1" id="svg_6">
+    <stop offset="0.457031" stop-opacity="0.996094" stop-color="#ffcc00"/>
+    <stop offset="1" stop-opacity="0.996094" stop-color="#faff00"/>
+   </linearGradient>
+   <linearGradient x2="1" x1="1" id="svg_7">
+    <stop offset="0.457031" stop-opacity="0.996094" stop-color="#ffcc00"/>
+    <stop offset="1" stop-opacity="0.996094" stop-color="#faff00"/>
+   </linearGradient>
+  </defs>
+  <g id="svg_8">
+   <ellipse ry="197" rx="197" cy="240" cx="320" stroke-width="5" stroke="#000000" fill="url(#svg_7)" id="svg_1"/>
+   <ellipse ry="166" rx="166" cy="240" cx="320" stroke-width="5" stroke="#000000" fill="url(#svg_6)" id="svg_3"/>
+   <text xml:space="preserve" y="276.2378" x="256.3458" transform="matrix(8.94008 0 0 8.94008 -1971.76 -2158.67)" text-anchor="middle" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" stroke-dasharray="null" stroke="#000000" fill="#000000" style="cursor: move; pointer-events: inherit;" font-size="24" font-family="Arial" id="svg_4">$</text>
+  </g>
+ </g>
+</svg>

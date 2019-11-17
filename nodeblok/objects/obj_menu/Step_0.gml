@@ -70,7 +70,7 @@ var mouse_x_gui = mouse_x;
 		{
 			if(selected == 0) // Learning Levels Room
 			{
-				obj_Transition.target = tutorial_room; SlideTransition(TRANS_MODE.GOTO); 
+				obj_Transition.target = main_room; SlideTransition(TRANS_MODE.GOTO); 
 			}
 	
 			if(selected == 1) // How to Play Room

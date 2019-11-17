@@ -36,7 +36,7 @@
         "eba3af87-ce23-459b-baa6-a5b06c0b5b60"
     ],
     "filterType": "GMObject",
-    "folderName": "Ingredients",
+    "folderName": "Ingredient Objects",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

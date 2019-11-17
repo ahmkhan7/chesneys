@@ -13,7 +13,7 @@
         "6860e22e-9174-4210-b5f3-27dc33fe2090"
     ],
     "filterType": "GMObject",
-    "folderName": "Recipes",
+    "folderName": "Recipe Objects",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
