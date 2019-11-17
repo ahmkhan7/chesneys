@@ -15,7 +15,7 @@ switch(room) {
 			rand_recipe = irandom_range(0, unlocked_recipes - 1);
 			rand_recipe_ingred_num = irandom_range(0, 4);
 			rand_recipe_ingred = recipe_ingred_list[rand_recipe, rand_recipe_ingred_num];
-			instance_create_depth(rand_spawner.x, rand_spawner.y, 3, rand_recipe_ingred);
+			instance_create_depth(rand_spawner.x, rand_spawner.y - 15, 1, rand_recipe_ingred);
 			cooldown = 60 + irandom_range(0, 30);
 		}
 		cooldown--;

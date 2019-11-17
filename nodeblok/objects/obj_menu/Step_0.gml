@@ -23,7 +23,7 @@ if(keyboard_check_pressed(confirmButt))
 	if(selected == 0) // Learning Levels Room
 	{
 		//audio_play_sound(Accept,2,false);
-		obj_Transition.target = tutorial_room; SlideTransition(TRANS_MODE.GOTO); 
+		obj_Transition.target = main_room; SlideTransition(TRANS_MODE.GOTO); 
 	}
 	
 	if(selected == 1) // How to Play Room
