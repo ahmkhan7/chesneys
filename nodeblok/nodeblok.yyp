@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "4c209121-c1ce-4506-89ac-8081e76fe3a9",
+            "Value": {
+                "id": "5fbfc969-04a2-45d7-b49b-695946909244",
+                "resourcePath": "sprites\/spr_big_background\/spr_big_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4f7b905a-b980-4291-8b94-91a6aa47b0d6",
             "Value": {
                 "id": "501d9e7d-04ef-4f7f-8ebc-65f0a017c89a",
@@ -412,6 +420,14 @@
                 "id": "844fc561-cdc9-47fe-872e-c364a264b296",
                 "resourcePath": "objects\/obj_orangepepper\/obj_orangepepper.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "63623bbc-989d-4c70-b6c9-ca01ba2b86ed",
+            "Value": {
+                "id": "023d3f72-b1a0-4e2d-ba53-fbe7518cdaff",
+                "resourcePath": "sprites\/spr_small_background\/spr_small_background.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
