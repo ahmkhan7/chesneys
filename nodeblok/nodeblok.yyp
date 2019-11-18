@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "00f8b763-e34a-412a-a419-f57013f41382",
+            "Value": {
+                "id": "c0e1a41a-46a1-4834-ae22-71e2af594f35",
+                "resourcePath": "objects\/obj_fridge\/obj_fridge.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "04be52d0-086a-47fa-bac7-bca556163757",
             "Value": {
                 "id": "19f95bf0-df3b-45f3-af7c-159d12e01b93",
@@ -108,6 +116,14 @@
                 "id": "e3e68e9a-c090-4600-b737-7fbb3dfdc37e",
                 "resourcePath": "objects\/obj_ingredient_spawner\/obj_ingredient_spawner.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0f54c8aa-0617-4ea2-81f9-e886336a979f",
+            "Value": {
+                "id": "d4f05d7f-d06c-421b-a6d1-8bb958923a5f",
+                "resourcePath": "sprites\/spr_fridge\/spr_fridge.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -303,6 +319,14 @@
             }
         },
         {
+            "Key": "3c855635-466d-4d2c-a133-c37f02f3f19a",
+            "Value": {
+                "id": "9602ebc8-44ba-4c4a-8fdf-7efa4d4cbec4",
+                "resourcePath": "sprites\/spr_boxed_potatos\/spr_boxed_potatos.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3e1e06c9-5891-4d0b-be56-babed0f9b11c",
             "Value": {
                 "id": "f8ad7596-4e6a-4c6f-aac5-ac2f8ad381ea",
@@ -396,6 +420,14 @@
                 "id": "83a579e6-8cbb-430c-b0c7-fa8445dcd136",
                 "resourcePath": "views\/5d0e0d34-821e-4db7-a13e-9bd0ba02fb6c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5e5f1f9b-f6f9-4809-88c2-55e9c1f84032",
+            "Value": {
+                "id": "4f737124-a278-409f-933d-66d07296aeeb",
+                "resourcePath": "objects\/obj_closed_fridge\/obj_closed_fridge.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -911,6 +943,14 @@
             }
         },
         {
+            "Key": "b39e2858-ebde-45e3-aeff-e5c1aad39a68",
+            "Value": {
+                "id": "f70ccceb-e3c3-42cb-955e-8f9aa3d71148",
+                "resourcePath": "sprites\/spr_shadow\/spr_shadow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b4d99cda-fd3e-4a70-b892-940c42e5bea9",
             "Value": {
                 "id": "ac041ec9-8b81-4fc2-a537-c5534576a84e",
@@ -1095,6 +1135,22 @@
             }
         },
         {
+            "Key": "d1171de2-7308-43f6-81f0-eddfe46cbb9a",
+            "Value": {
+                "id": "4026e905-48ae-41d7-be34-9db287789ee9",
+                "resourcePath": "objects\/obj_shadow\/obj_shadow.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d13072f6-0f5d-49d0-b120-aa9520871c92",
+            "Value": {
+                "id": "dec9d8a9-7550-4182-b8b3-a99c83326b27",
+                "resourcePath": "objects\/obj_boxed_potatos\/obj_boxed_potatos.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d444809a-34fa-4b56-bd53-2b8a3de50150",
             "Value": {
                 "id": "efef43e1-d335-4a91-a9f9-00277232c2e7",
@@ -1228,6 +1284,14 @@
                 "id": "4fdeb147-b916-4c7e-aed0-6f564f503e97",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f41d43c5-5f2a-45d3-8a02-06593d3e7167",
+            "Value": {
+                "id": "0e0d7ccc-4f94-420f-9c2c-ae2701122ce8",
+                "resourcePath": "sprites\/spr_closed_fridge\/spr_closed_fridge.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
