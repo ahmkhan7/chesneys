@@ -1,5 +1,0 @@
-In NodeBlok, shapes will fall out of each block at the top of the screen and follow the path. 
-Your job is to change the path so that the shapes get to the matching block at the bottom of the screen. 
-You can change the path that the shapes follow using nodes. 
-Nodes are connected to two or more parts of the path and point towards the part of the path that shapes will follow. 
-You can click on a node to change which way it is pointing.
