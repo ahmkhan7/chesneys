@@ -2,7 +2,8 @@ randomize();
 start = 0;
 cooldown = 30;
 unlocked_recipes = 1;
-
+current_recipe = 0;
+added_ingredients = 0;
 //Create an array for the three ingredient spawner instances along the top
 ingredient_spawners = [instance_nearest(0, 0, obj_ingredient_spawner),
 					  instance_nth_nearest(0, 0, obj_ingredient_spawner, 2),
@@ -12,7 +13,6 @@ ingredient_spawners = [instance_nearest(0, 0, obj_ingredient_spawner),
 recipe_list = [obj_rcp_salad, obj_rcp_sandwich, obj_rcp_omelette, 
 			   obj_rcp_taco, obj_rcp_smoothie, obj_rcp_spaghetti, obj_rcp_steak];
 					  
-//Create a 2D parallel array that relates each recipe to its ingredient list
 recipe_ingred_list[0, 0] = obj_lettuce; recipe_ingred_list[0, 1] = obj_carrot;
 recipe_ingred_list[0, 2] = obj_cucumber; recipe_ingred_list[0, 3] = obj_redpepper;
 recipe_ingred_list[0, 4] = obj_chicken;

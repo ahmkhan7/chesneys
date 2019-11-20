@@ -1,5 +1,6 @@
 switch(room) {
     case main_room:
+		//spawn a random unlocked ingredient every random interval
         if(cooldown < 0) {
             rand_spawner_num = irandom_range(0, 2);
             rand_spawner = ingredient_spawners[rand_spawner_num];
@@ -11,7 +12,16 @@ switch(room) {
             cooldown = 60 + irandom_range(0, 30);
         }
         cooldown--;
+
+		if (added_ingredients >= 5)
+		{
+			var new_recipe = irandom_range(0, unlocked_recipes - 1);
+			obj_menu_order.current_recipe = new_recipe;
+			obj_menu_order.new_recipe = false;
+		}
 }
+
+
     /*
     case tutorial_room:
         oGuide.text = "Click the node in the center\nto change direction!";
