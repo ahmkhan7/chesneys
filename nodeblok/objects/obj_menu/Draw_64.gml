@@ -3,7 +3,6 @@
 // Set default font
 draw_set_font(fnt_menu);
 
-
 // Loop through the array containing each menu element
 for(i = 0; i < array_length_1d(global.menu); i++)
 {

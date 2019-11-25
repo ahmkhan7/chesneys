@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "ba93c017-cee0-4bc7-b781-0ca1b22e0161",
+            "Value": {
+                "id": "9d08e3af-55a5-43b6-b99a-8d41c1220825",
+                "resourcePath": "scripts\\award_coins\\award_coins.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bbc70b5c-b458-4c52-896f-f6a18ab0f397",
             "Value": {
                 "id": "f7a07e85-cfa4-4b77-9e9f-c0f549672824",
@@ -1391,6 +1399,14 @@
             }
         },
         {
+            "Key": "f8f972d8-3056-40c4-9e66-4e84fb87a3e1",
+            "Value": {
+                "id": "91cbc165-659c-4d3b-9260-b086c2daa673",
+                "resourcePath": "rooms\\tutorial_room\\tutorial_room.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "f903d61e-a27d-4f71-85d0-b1cbe2b2eeca",
             "Value": {
                 "id": "08b13387-418e-489e-8061-6d70df62557f",
@@ -1426,7 +1442,8 @@
     "script_order": [
         "3bd44c57-8dfb-4495-a57b-64f44f36be79",
         "ad633486-4e40-46a5-a58e-d97ef6df87fc",
-        "16f64781-9ebc-4b42-9102-6626d5acc948"
+        "16f64781-9ebc-4b42-9102-6626d5acc948",
+        "ba93c017-cee0-4bc7-b781-0ca1b22e0161"
     ],
     "tutorial": ""
 }

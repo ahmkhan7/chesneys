@@ -1,23 +1,31 @@
 switch(room) {
     case main_room:
-		//spawn a random unlocked ingredient every random interval
+		//Spawn a random ingredient every random interval
         if(cooldown < 0) {
+			//Pick one of the spawners to spawn at
             rand_spawner_num = irandom_range(0, 2);
             rand_spawner = ingredient_spawners[rand_spawner_num];
             
-            rand_recipe = irandom_range(0, unlocked_recipes - 1);
+			//Pick a random recipe's ingredients
+			if current_recipe >= 0 && current_recipe < 6
+				rand_recipe = irandom_range(current_recipe, current_recipe + 1);
+			else
+				rand_recipe = irandom_range(current_recipe - 1, current_recipe);
+			
+			//Pick a random ingredient from that recipe and spawn it and add a cooldown
             rand_recipe_ingred_num = irandom_range(0, 4);
             rand_recipe_ingred = recipe_ingred_list[rand_recipe, rand_recipe_ingred_num];
-            instance_create_depth(rand_spawner.x, rand_spawner.y - 15, 1, rand_recipe_ingred);
-            cooldown = 60 + irandom_range(0, 30);
+            instance_create_depth(rand_spawner.x, rand_spawner.y - 15, 1, rand_recipe_ingred[0]);
+            cooldown = 60 + irandom_range(20, 110);
         }
         cooldown--;
 
-		if (added_ingredients >= 5)
+		//Once a player finishes an order, award their coins and generate a new recipe
+		if (obj_menu_order.completed_recipe)
 		{
-			var new_recipe = irandom_range(0, unlocked_recipes - 1);
-			obj_menu_order.current_recipe = new_recipe;
-			obj_menu_order.new_recipe = false;
+			coins += award_coins(obj_cooking_pot.num_attempts, recipe[1]);
+			current_recipe = irandom_range(0, unlocked_recipes);
+			recipe = recipe_list[current_recipe];
 		}
 }
 

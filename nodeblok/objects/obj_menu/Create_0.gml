@@ -1,6 +1,6 @@
 // Menu element names. This will be what is actually drawn
-global.menu[0] = "Tutorial";
-global.menu[1] = "How To Play";
+global.menu[0] = "Play";
+global.menu[1] = "Tutorial";
 global.menu[2] = "Options";
 global.menu[3] = "Exit";
 
