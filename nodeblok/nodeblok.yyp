@@ -663,6 +663,14 @@
             }
         },
         {
+            "Key": "748de5c6-d5af-4385-b063-0906eeb1efc3",
+            "Value": {
+                "id": "3eee6e1a-cee2-4ff4-a5ed-b5c0d0553f08",
+                "resourcePath": "sprites\\spr_openedcoookbook\\spr_openedcoookbook.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "75501007-9f49-4bae-aa26-e517dd430201",
             "Value": {
                 "id": "a5a0ae1b-b30c-4ff1-b5ac-f9459e7836a4",
