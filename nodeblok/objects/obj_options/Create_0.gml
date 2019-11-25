@@ -2,7 +2,9 @@
 global.options[0] = "Music: On";
 global.options[1] = "Sound Effects: On";
 global.options[2] = "Full Screen: Off";
-global.options[3] = "Exit to Menu";
+global.options[3] = "Speed";
+global.options[4] = "   ";
+global.options[5] = "Exit to Menu";
 //Boolean for sound effects on/off
 global.sound_on = true;
 
@@ -61,4 +63,4 @@ confirmButt = vk_enter;
 
 menu_itemheight = font_get_size(fnt_menu);
 menu_top = (height/2-150);
-menu_bottom = menu_top + (spacing*array_length_1d(global.menu));
+menu_bottom = menu_top + (spacing*array_length_1d(global.options));

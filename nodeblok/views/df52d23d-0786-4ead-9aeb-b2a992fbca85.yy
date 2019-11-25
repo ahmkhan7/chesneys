@@ -18,7 +18,8 @@
         "04be52d0-086a-47fa-bac7-bca556163757",
         "8f00d11c-cd8f-48df-8108-8cc0f2afc19a",
         "46f00e4b-4e32-4d81-8e10-6588d6d012a2",
-        "168f5706-21f1-4b7b-a6b6-c251f89f4143"
+        "168f5706-21f1-4b7b-a6b6-c251f89f4143",
+        "182b6afa-0d8f-442e-b62b-ab8d84608e9a"
     ],
     "filterType": "GMObject",
     "folderName": "Gameplay Elements",

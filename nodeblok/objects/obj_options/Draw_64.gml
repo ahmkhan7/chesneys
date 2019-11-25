@@ -2,7 +2,7 @@
 
 // Set default font
 draw_set_font(fnt_menu);
-
+nextPos = [0,0]; //nextPos stores where a new object should go for complex menu objects
 
 // Loop through the array containing each menu element
 for(i = 0; i < array_length_1d(global.options); i++)
@@ -20,8 +20,17 @@ for(i = 0; i < array_length_1d(global.options); i++)
 	}
 	
 	// Draw the text
-	draw_text_transformed((width/2)-220, (height/2) + (fa_center+i*spacing)-100, global.options[i], 4, 4, 0);	
+	draw_text_transformed((width/2)-220, (height/2) + (fa_center+i*spacing)-100, global.options[i], 4, 4, 0);
+	if (i < array_length_1d(global.options))
+	{
+		nextPos = [(width/2)-220, (height/2) + (fa_center+i*spacing)-100];
+	}
 }
+
+//Draw speed slider
+instance_create_depth(nextPos[0], nextPos[1] - spacing*2 + 20, 0, obj_slider);
+
+
 // Getting width of cursor to separate it a bit from the menu
 var cursWidth = sprite_get_width(s_cursor);
 
