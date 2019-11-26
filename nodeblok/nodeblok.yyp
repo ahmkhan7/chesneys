@@ -218,7 +218,7 @@
             "Key": "182b6afa-0d8f-442e-b62b-ab8d84608e9a",
             "Value": {
                 "id": "cf02103f-5183-492e-a20d-642f86b3cf2d",
-                "resourcePath": "objects\/obj_slider\/obj_slider.yy",
+                "resourcePath": "objects\\obj_speed_slider\\obj_speed_slider.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1428,14 +1428,6 @@
                 "id": "0e0d7ccc-4f94-420f-9c2c-ae2701122ce8",
                 "resourcePath": "sprites\/spr_closed_fridge\/spr_closed_fridge.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "f5f95f4c-fb12-4635-b57d-d4474e0b24b7",
-            "Value": {
-                "id": "1d5e7eb7-d248-44ec-9506-4330a45b9775",
-                "resourcePath": "rooms\/options_room1\/options_room1.yy",
-                "resourceType": "GMRoom"
             }
         },
         {

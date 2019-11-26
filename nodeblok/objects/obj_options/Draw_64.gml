@@ -28,7 +28,7 @@ for(i = 0; i < array_length_1d(global.options); i++)
 }
 
 //Draw speed slider
-instance_create_depth(nextPos[0], nextPos[1] - spacing*2 + 20, 0, obj_slider);
+instance_create_depth(nextPos[0], nextPos[1] - spacing*2 + 20, 0, obj_speed_slider);
 
 
 // Getting width of cursor to separate it a bit from the menu
