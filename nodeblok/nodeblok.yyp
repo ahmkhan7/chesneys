@@ -439,14 +439,6 @@
             }
         },
         {
-            "Key": "4f7b905a-b980-4291-8b94-91a6aa47b0d6",
-            "Value": {
-                "id": "501d9e7d-04ef-4f7f-8ebc-65f0a017c89a",
-                "resourcePath": "sounds\/game_music_1\/game_music_1.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "4f7d8620-6991-42e1-a556-0bf5ac53c153",
             "Value": {
                 "id": "74be08b6-a303-45b9-b30c-bbde15458f07",

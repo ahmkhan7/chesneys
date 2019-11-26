@@ -1,4 +1,5 @@
 // Menu element names. This will be what is actually drawn
+//global.Font = font_add_sprite_ext(spr_Font, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", true, 2);
 global.menu[0] = "Play";
 global.menu[1] = "Tutorial";
 global.menu[2] = "Options";
@@ -63,3 +64,10 @@ menu_top = (height/2-150);
 menu_bottom = menu_top + (spacing*array_length_1d(global.menu));
 
 score = 0;
+
+//Variables that deal with ingredient generation on the conveyer belt
+k = 0;
+r = 0;
+cooldown = 0;
+ingredient_spawner = instance_nearest(0, 0, obj_ingredient_spawner);
+ingredient_spawner.target = [2100, 880];
