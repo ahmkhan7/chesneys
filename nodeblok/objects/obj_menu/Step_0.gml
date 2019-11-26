@@ -99,7 +99,7 @@ if (cooldown < 0) {
 	recipe = obj_gameplay.recipe_ingred_list[k, r];
 	instance_create_depth(ingredient_spawner.x, ingredient_spawner.y, 1,
 								  recipe[0]);
-	cooldown = 45;
+	cooldown = 80;
 	r++;
 }
 cooldown--;

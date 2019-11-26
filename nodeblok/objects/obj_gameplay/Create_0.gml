@@ -26,7 +26,7 @@ recipe_ingred_list[1, 0] = [obj_bread, "Bread"]; recipe_ingred_list[1, 1] = [obj
 recipe_ingred_list[1, 2] = [obj_cheese, "Cheese"] ; recipe_ingred_list[1, 3] = [obj_lettuce, "Lettuce"];
 recipe_ingred_list[1, 4] = [obj_tomato, "Tomato"];
 recipe_ingred_list[2, 0] = [obj_eggs, "Eggs"]; recipe_ingred_list[2, 1] = [obj_onion, "Onion"];
-recipe_ingred_list[2, 2] = [obj_orangepepper, "Orange Pepper"]; recipe_ingred_list[2, 3] = [obj_potato, "Potato"];
+recipe_ingred_list[2, 2] = [obj_redpepper, "Red Pepper"]; recipe_ingred_list[2, 3] = [obj_potato, "Potato"];
 recipe_ingred_list[2, 4] = [obj_mushroom, "Mushroom"];
 recipe_ingred_list[3, 0] = [obj_tortilla, "Tortilla"]; recipe_ingred_list[3, 1] = [obj_beef, "Beef"];
 recipe_ingred_list[3, 2] = [obj_avocado, "Avocado"]; recipe_ingred_list[3, 3] = [obj_cheese, "Cheese"];
