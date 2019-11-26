@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "22f119cc-4293-4750-8890-b4a5bb25d771",
+            "Value": {
+                "id": "129aaee9-fb93-4eba-a1ae-1ea5a629e66c",
+                "resourcePath": "views\\22f119cc-4293-4750-8890-b4a5bb25d771.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "25d1c43f-f8c9-4d0e-8970-7f0ddda9ee7e",
             "Value": {
                 "id": "534aea05-b61f-4833-82c1-ca9ac96855fc",
@@ -380,6 +388,14 @@
                 "id": "216e995f-0944-429f-8bda-66e1ef8693f1",
                 "resourcePath": "views\/369d4f35-a1fc-424f-8ba1-896b8bd779c0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3b09d2c7-8e4b-4eda-9664-47371345632e",
+            "Value": {
+                "id": "26c571d6-c655-4251-a5f1-927266c493c1",
+                "resourcePath": "shaders\\xot_cbs_shTritanopia\\xot_cbs_shTritanopia.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -751,11 +767,27 @@
             }
         },
         {
+            "Key": "82abe769-06de-4f44-aab6-df5e3b836d8d",
+            "Value": {
+                "id": "c26eaf49-798b-4239-b69e-800edd2e659e",
+                "resourcePath": "shaders\\xot_cbs_shDeuteranopia\\xot_cbs_shDeuteranopia.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "8466a372-3309-48b5-8426-2e9aa70dd8b7",
             "Value": {
                 "id": "8724955f-6587-41e2-b87b-ca36739264d8",
                 "resourcePath": "views\/8466a372-3309-48b5-8426-2e9aa70dd8b7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8469c6b9-1576-46eb-9b61-b9f8c6d3b30c",
+            "Value": {
+                "id": "ffd823ec-cd53-4cac-899a-e38927d7191b",
+                "resourcePath": "sprites\\spr_cookbook\\spr_cookbook.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -924,6 +956,14 @@
                 "id": "ef2fc81f-d75f-44d6-834c-2015ed0bac06",
                 "resourcePath": "sprites\/spr_strawberries\/spr_strawberries.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a3beff0c-8a03-48bf-b813-228494feac31",
+            "Value": {
+                "id": "6c84daaf-daac-4f67-b9c7-8258f1f2ab6b",
+                "resourcePath": "extensions\\Color_Blindness_Simulation\\Color_Blindness_Simulation.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
@@ -1356,6 +1396,14 @@
                 "id": "6711ae1f-4e83-4d7c-9c94-86a7f0c0160e",
                 "resourcePath": "views\/c2c8e09b-6229-4fe4-9de3-d254786c2ba2-room.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e7c55754-2b00-4f82-bab7-5a05145c64a0",
+            "Value": {
+                "id": "13e75912-3427-4a29-b08e-fba17333ff48",
+                "resourcePath": "shaders\\xot_cbs_shProtanopia\\xot_cbs_shProtanopia.yy",
+                "resourceType": "GMShader"
             }
         },
         {

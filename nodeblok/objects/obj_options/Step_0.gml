@@ -23,10 +23,10 @@ if(keyboard_check_pressed(confirmButt))
 {
 	if(selected == 0) // Toggling Music on or off
 	{
-		if audio_is_playing(menu_music)
+		if audio_is_playing(Bustling_City)
 		{
 		
-			audio_stop_sound(menu_music);
+			audio_stop_sound(Bustling_City);
 			global.options[0] = "Music: Off"
 		}
 		else
@@ -37,19 +37,27 @@ if(keyboard_check_pressed(confirmButt))
 		}
 	}
 	
-	if(selected == 1) // Change Sound Effects Enabled Boolean
+	if(selected == 1) // Change Shader
 	{
-		if (global.sound_on) 
+		if (global.shader == xot_cbs_shTritanopia) 
 		{
-			
-			global.sound_on = false;
-			global.options[1] = "Sound Effects: Off";
+			global.shader = "none";
+			global.options[1] = "Colorblind Filter: Off";
 		}
-		else
+		else if (global.shader == "none")
 		{
-			
-			global.sound_on = true;	
-			global.options[1] = "Sound Effects: On";
+			global.shader = xot_cbs_shDeuteranopia;	
+			global.options[1] = "Colorblind Filter: Deuteranopia";
+		}
+		else if (global.shader == xot_cbs_shDeuteranopia)
+		{
+			global.shader = xot_cbs_shProtanopia;	
+			global.options[1] = "Colorblind Filter: Protanopia";
+		}
+		else if (global.shader == xot_cbs_shProtanopia)
+		{
+			global.shader = xot_cbs_shTritanopia;	
+			global.options[1] = "Colorblind Filter: Tritanopia";
 		}
 	}
 	
@@ -103,34 +111,45 @@ if (mouse_check_button_pressed(mb_left))
 {
 	if(selected == 0) // Toggling Music on or off
 	{
-		if audio_is_playing(menu_music)
+		if audio_is_playing(Bustling_City)
 		{
 			//audio_play_sound(Decline,2,false);
-			audio_stop_sound(menu_music);
+			audio_stop_sound(Bustling_City);
 			global.options[0] = "Music: Off"
 		}
 		else
 		{
 			//audio_play_sound(Accept,2,false);
-			audio_play_sound(menu_music, 1, true);
+			audio_play_sound(Bustling_City, 1, true);
 			global.options[0] = "Music: On";
 		}
 	}
 	
-	if(selected == 1) // Change Sound Effects Enabled Boolean
+	if(selected == 1) // Change Shader
 	{
-		if (global.sound_on) 
+		if (global.shader == xot_cbs_shTritanopia) 
 		{
-			//audio_play_sound(Decline,2,false);
-			global.sound_on = false;
-			global.options[1] = "Sound Effects: Off";
+			global.shader = "none";
+			global.options[1] = "Colorblind Filter: Off";
 		}
-	else
-	{
-		//audio_play_sound(Accept,2,false);
-		global.sound_on = true;	
-		global.options[1] = "Sound Effects: On";
-	}
+		else if (global.shader == "none")
+		{
+			global.shader = xot_cbs_shDeuteranopia;	
+			global.options[1] = "Colorblind Filter: Red/Green";
+			shader_set(global.shader);
+		}
+		else if (global.shader == xot_cbs_shDeuteranopia)
+		{
+			global.shader = xot_cbs_shProtanopia;	
+			global.options[1] = "Colorblind Filter: Green/Red";
+			shader_set(global.shader);
+		}
+		else if (global.shader == xot_cbs_shProtanopia)
+		{
+			global.shader = xot_cbs_shTritanopia;	
+			global.options[1] = "Colorblind Filter: Blue/Yellow";
+			shader_set(global.shader);
+		}
 	}
 	
 	if(selected == 2) // Toggling Full Screen on/off

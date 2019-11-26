@@ -1,12 +1,12 @@
 // Menu element names. This will be what is actually drawn
 global.options[0] = "Music: On";
-global.options[1] = "Sound Effects: On";
+global.options[1] = "Colorblind Filter: Off";
 global.options[2] = "Full Screen: Off";
 global.options[3] = "Speed";
 global.options[4] = "   ";
 global.options[5] = "Exit to Menu";
 //Boolean for sound effects on/off
-global.sound_on = true;
+global.shader = "none";
 
 //Getting the width and height of the GUI
 height = room_height;
