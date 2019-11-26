@@ -13,16 +13,22 @@
 
 	switch(current_recipe) {
 		case "Salad":
+			audio_play_sound(Complete_Recipe, 1, false);
 			earned_coins += 10; break;
 		case "Sandwich":
+			audio_play_sound(Complete_Recipe, 1, false);
 			earned_coins += 25; break;
 		case "Omelette":
+			audio_play_sound(Complete_Recipe, 1, false);
 			earned_coins += 65; break;
 		case "Taco":
+			audio_play_sound(Complete_Recipe, 1, false);
 			earned_coins += 105; break;
 		case "Smoothie":
+			audio_play_sound(Complete_Recipe, 1, false);
 			earned_coins += 225; break;
 		case "Steak":
+			audio_play_sound(Complete_Recipe, 1, false);
 			earned_coins += 500; break;
 		default:
 			earned_coins = 0; break;
