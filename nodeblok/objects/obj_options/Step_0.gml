@@ -125,6 +125,7 @@ if (mouse_check_button_pressed(mb_left))
 		{
 			global.shader = "none";
 			global.options[1] = "Colorblind Filter: Off";
+			shader_reset();
 		}
 		else if (global.shader == "none")
 		{

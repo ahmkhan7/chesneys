@@ -6,14 +6,14 @@ if audio_is_playing(Bustling_City)
 else
 	global.options[0] = "Music: Off";
 
-if (global.shader == xot_cbs_shTritanopia) 
+if (global.shader == "none") 
 	global.options[1] = "Colorblind Filter: Off";
-else if (global.shader == "none")
-	global.options[1] = "Colorblind Filter: Deuteranopia";
 else if (global.shader == xot_cbs_shDeuteranopia)
-	global.options[1] = "Colorblind Filter: Protanopia";
+	global.options[1] = "Colorblind Filter: Red/Green";
 else if (global.shader == xot_cbs_shProtanopia)
-	global.options[1] = "Colorblind Filter: Tritanopia";
+	global.options[1] = "Colorblind Filter: Green/Red";
+else if (global.shader == xot_cbs_shTritanopia)
+	global.options[1] = "Colorblind Filter: Blue/Yellow";
 
 if window_get_fullscreen()
 	global.options[2] = "Full Screen: On";

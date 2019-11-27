@@ -4,7 +4,7 @@ randomize();
 //Variables for spawn cooldown, ingredient generation, and player coins
 //start = 0;
 cooldown = 30;
-unlocked_recipes = 6;
+unlocked_recipes = 0;
 current_recipe = 0;
 coins = 0;
 recipe = ["", ""];

@@ -17,7 +17,9 @@
         "748de5c6-d5af-4385-b063-0906eeb1efc3",
         "ebfdfe85-a64d-4222-9e49-03df4f6531dc",
         "09a48519-d984-4339-8023-51ab1b411765",
-        "8469c6b9-1576-46eb-9b61-b9f8c6d3b30c"
+        "8469c6b9-1576-46eb-9b61-b9f8c6d3b30c",
+        "466cfae9-c5fb-4fd5-9b0a-36154f67ce8e",
+        "a4066273-e40d-4f3c-ba3f-b9ecf1f8b25c"
     ],
     "filterType": "GMSprite",
     "folderName": "Gameplay Sprites",

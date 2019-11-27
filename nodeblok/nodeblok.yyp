@@ -431,6 +431,14 @@
             }
         },
         {
+            "Key": "466cfae9-c5fb-4fd5-9b0a-36154f67ce8e",
+            "Value": {
+                "id": "a7470258-8b78-4a67-8604-beb68bf2af27",
+                "resourcePath": "sprites\\spr_coin\\spr_coin.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "469ccb9b-3df1-4943-9b25-a819d53f3c63",
             "Value": {
                 "id": "0113d086-cf4c-41df-ad38-0188f8b5274e",
@@ -823,6 +831,14 @@
             }
         },
         {
+            "Key": "8d4e47bb-1fa3-458b-a22e-a8b5c430acbc",
+            "Value": {
+                "id": "e9867c6a-fd83-4333-8947-c5f2ab2beccf",
+                "resourcePath": "sounds\\Trash_can_disposal\\Trash_can_disposal.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8d54554b-a50c-4141-bebf-795f1f1c2b05",
             "Value": {
                 "id": "ddde24c2-fcde-4ee7-9eb5-51e8d6c80598",
@@ -964,6 +980,14 @@
                 "id": "6c84daaf-daac-4f67-b9c7-8258f1f2ab6b",
                 "resourcePath": "extensions\\Color_Blindness_Simulation\\Color_Blindness_Simulation.yy",
                 "resourceType": "GMExtension"
+            }
+        },
+        {
+            "Key": "a4066273-e40d-4f3c-ba3f-b9ecf1f8b25c",
+            "Value": {
+                "id": "078d905d-6f66-405d-a542-4b6d13b900e5",
+                "resourcePath": "sprites\\spr_jetpack\\spr_jetpack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1116,6 +1140,14 @@
                 "id": "ac041ec9-8b81-4fc2-a537-c5534576a84e",
                 "resourcePath": "objects\/oGuide\/oGuide.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b52d73c0-1f41-4c29-954b-730d7fefbb31",
+            "Value": {
+                "id": "2259e8f4-6b5b-43d3-bc74-8cdfa15d5b1e",
+                "resourcePath": "scripts\\buy_next_item\\buy_next_item.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1503,6 +1535,14 @@
             }
         },
         {
+            "Key": "f4b1b807-844e-427d-8631-f1f0ddcf04a9",
+            "Value": {
+                "id": "562e1433-127c-439d-b0e5-1c4ba6a30256",
+                "resourcePath": "fonts\\fnt_ingredient_list_small\\fnt_ingredient_list_small.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "f8f972d8-3056-40c4-9e66-4e84fb87a3e1",
             "Value": {
                 "id": "91cbc165-659c-4d3b-9260-b086c2daa673",
@@ -1535,6 +1575,14 @@
             }
         },
         {
+            "Key": "fd278b25-9536-456a-bf93-63293f60c25e",
+            "Value": {
+                "id": "95a37dfd-ac0d-4a40-8869-dc9c1df72d23",
+                "resourcePath": "objects\\obj_cookbook\\obj_cookbook.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fd35fa06-5e4c-423c-a223-fba346e73c44",
             "Value": {
                 "id": "77bbddec-61e7-45bd-b8be-c06ae4ff2681",
@@ -1547,7 +1595,8 @@
         "3bd44c57-8dfb-4495-a57b-64f44f36be79",
         "ad633486-4e40-46a5-a58e-d97ef6df87fc",
         "16f64781-9ebc-4b42-9102-6626d5acc948",
-        "ba93c017-cee0-4bc7-b781-0ca1b22e0161"
+        "ba93c017-cee0-4bc7-b781-0ca1b22e0161",
+        "b52d73c0-1f41-4c29-954b-730d7fefbb31"
     ],
     "tutorial": ""
 }

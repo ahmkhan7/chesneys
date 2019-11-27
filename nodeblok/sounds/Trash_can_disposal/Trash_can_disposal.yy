@@ -1,8 +1,8 @@
 {
-    "id": "19e9ad95-c751-4b2a-9173-6043f481e98e",
+    "id": "8d4e47bb-1fa3-458b-a22e-a8b5c430acbc",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "Purchase_recipe",
+    "name": "Trash_can_disposal",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
@@ -10,5 +10,5 @@
     "preload": false,
     "sampleRate": 44100,
     "type": 0,
-    "volume": 0.3
+    "volume": 0.5
 }
