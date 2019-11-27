@@ -1,7 +1,6 @@
 //Randomize the seed
 randomize();
 
-
 //Variables for spawn cooldown, ingredient generation, and player coins
 //start = 0;
 cooldown = 30;

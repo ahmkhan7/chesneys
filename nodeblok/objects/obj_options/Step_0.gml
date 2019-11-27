@@ -5,7 +5,6 @@ cursorLevitate = 8*dsin(cursorTime);
 // to oscillate cursor
 cursorTime += leviRate;
 
-
 // Vertical input is determined by the press of up
 // and down buttons
 var vert =  (keyboard_check_pressed(downButt)) -  (keyboard_check_pressed(upButt));
@@ -25,14 +24,12 @@ if(keyboard_check_pressed(confirmButt))
 	{
 		if audio_is_playing(Bustling_City)
 		{
-		
 			audio_stop_sound(Bustling_City);
 			global.options[0] = "Music: Off"
 		}
 		else
 		{
-			
-			audio_play_sound(menu_music, 1, true);
+			audio_play_sound(Bustling_City, 1, true);
 			global.options[0] = "Music: On";
 		}
 	}
@@ -43,6 +40,7 @@ if(keyboard_check_pressed(confirmButt))
 		{
 			global.shader = "none";
 			global.options[1] = "Colorblind Filter: Off";
+			//TURN OFF SHADER!!!!!
 		}
 		else if (global.shader == "none")
 		{
@@ -65,13 +63,11 @@ if(keyboard_check_pressed(confirmButt))
 	{
 		if window_get_fullscreen()
 		{
-		
 			window_set_fullscreen(false);
 			global.options[2] = "Fullscreen: Off";
 		}
 		else
-		{
-			
+		{			
 			window_set_fullscreen(true);
 			global.options[2] = "Fullscreen: On";
 		}
@@ -79,6 +75,7 @@ if(keyboard_check_pressed(confirmButt))
 	
 	if(selected == 5) // Exit to menu
 	{
+		draw = false;
 		obj_Transition.target = menu_room;
 		SlideTransition(TRANS_MODE.GOTO);
 	}
@@ -88,9 +85,8 @@ if(keyboard_check_pressed(confirmButt))
 
 var mouse_y_gui = mouse_y;
 var mouse_x_gui = mouse_x;
-if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 642 && mouse_x_gui <= 1305)
+if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 700 && mouse_x_gui <= 1300)
 {
-	//selected = floor((mouse_y_gui - menu_top) / (menu_bottom - menu_top));
 	if(mouse_y_gui >= menu_top && mouse_y_gui < menu_top + spacing) {
 		selected = 0;
 	} else if (mouse_y_gui >= menu_top + spacing && mouse_y_gui < menu_top + spacing * 2) {
@@ -113,13 +109,11 @@ if (mouse_check_button_pressed(mb_left))
 	{
 		if audio_is_playing(Bustling_City)
 		{
-			//audio_play_sound(Decline,2,false);
 			audio_stop_sound(Bustling_City);
 			global.options[0] = "Music: Off"
 		}
 		else
 		{
-			//audio_play_sound(Accept,2,false);
 			audio_play_sound(Bustling_City, 1, true);
 			global.options[0] = "Music: On";
 		}
@@ -156,13 +150,11 @@ if (mouse_check_button_pressed(mb_left))
 	{
 		if window_get_fullscreen()
 		{
-			audio_play_sound(Decline,2,false);
 			window_set_fullscreen(false);
 			global.options[2] = "Fullscreen: Off";
 		}
 		else
 		{
-			//audio_play_sound(Accept,2,false);
 			window_set_fullscreen(true);
 			global.options[2] = "Fullscreen: On";
 		}
@@ -170,6 +162,7 @@ if (mouse_check_button_pressed(mb_left))
 	
 	if(selected == 5) // Exit to menu
 	{
+		draw = false;
 		obj_Transition.target = menu_room;
 		SlideTransition(TRANS_MODE.GOTO);
 	}
