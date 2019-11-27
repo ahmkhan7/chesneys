@@ -298,7 +298,7 @@
             "Key": "22f119cc-4293-4750-8890-b4a5bb25d771",
             "Value": {
                 "id": "129aaee9-fb93-4eba-a1ae-1ea5a629e66c",
-                "resourcePath": "views\\22f119cc-4293-4750-8890-b4a5bb25d771.yy",
+                "resourcePath": "views\/22f119cc-4293-4750-8890-b4a5bb25d771.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -394,7 +394,7 @@
             "Key": "3b09d2c7-8e4b-4eda-9664-47371345632e",
             "Value": {
                 "id": "26c571d6-c655-4251-a5f1-927266c493c1",
-                "resourcePath": "shaders\\xot_cbs_shTritanopia\\xot_cbs_shTritanopia.yy",
+                "resourcePath": "shaders\/xot_cbs_shTritanopia\/xot_cbs_shTritanopia.yy",
                 "resourceType": "GMShader"
             }
         },
@@ -434,7 +434,7 @@
             "Key": "466cfae9-c5fb-4fd5-9b0a-36154f67ce8e",
             "Value": {
                 "id": "a7470258-8b78-4a67-8604-beb68bf2af27",
-                "resourcePath": "sprites\\spr_coin\\spr_coin.yy",
+                "resourcePath": "sprites\/spr_coin\/spr_coin.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -778,7 +778,7 @@
             "Key": "82abe769-06de-4f44-aab6-df5e3b836d8d",
             "Value": {
                 "id": "c26eaf49-798b-4239-b69e-800edd2e659e",
-                "resourcePath": "shaders\\xot_cbs_shDeuteranopia\\xot_cbs_shDeuteranopia.yy",
+                "resourcePath": "shaders\/xot_cbs_shDeuteranopia\/xot_cbs_shDeuteranopia.yy",
                 "resourceType": "GMShader"
             }
         },
@@ -794,7 +794,7 @@
             "Key": "8469c6b9-1576-46eb-9b61-b9f8c6d3b30c",
             "Value": {
                 "id": "ffd823ec-cd53-4cac-899a-e38927d7191b",
-                "resourcePath": "sprites\\spr_cookbook\\spr_cookbook.yy",
+                "resourcePath": "sprites\/spr_cookbook\/spr_cookbook.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -834,7 +834,7 @@
             "Key": "8d4e47bb-1fa3-458b-a22e-a8b5c430acbc",
             "Value": {
                 "id": "e9867c6a-fd83-4333-8947-c5f2ab2beccf",
-                "resourcePath": "sounds\\Trash_can_disposal\\Trash_can_disposal.yy",
+                "resourcePath": "sounds\/Trash_can_disposal\/Trash_can_disposal.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -978,7 +978,7 @@
             "Key": "a3beff0c-8a03-48bf-b813-228494feac31",
             "Value": {
                 "id": "6c84daaf-daac-4f67-b9c7-8258f1f2ab6b",
-                "resourcePath": "extensions\\Color_Blindness_Simulation\\Color_Blindness_Simulation.yy",
+                "resourcePath": "extensions\/Color_Blindness_Simulation\/Color_Blindness_Simulation.yy",
                 "resourceType": "GMExtension"
             }
         },
@@ -986,7 +986,7 @@
             "Key": "a4066273-e40d-4f3c-ba3f-b9ecf1f8b25c",
             "Value": {
                 "id": "078d905d-6f66-405d-a542-4b6d13b900e5",
-                "resourcePath": "sprites\\spr_jetpack\\spr_jetpack.yy",
+                "resourcePath": "sprites\/spr_jetpack\/spr_jetpack.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1146,7 +1146,7 @@
             "Key": "b52d73c0-1f41-4c29-954b-730d7fefbb31",
             "Value": {
                 "id": "2259e8f4-6b5b-43d3-bc74-8cdfa15d5b1e",
-                "resourcePath": "scripts\\buy_next_item\\buy_next_item.yy",
+                "resourcePath": "scripts\/buy_next_item\/buy_next_item.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1154,7 +1154,7 @@
             "Key": "b96ec5cb-e8c1-4fa0-919b-e545912a2021",
             "Value": {
                 "id": "8693aa62-6891-446c-81c3-2e6569ddbe83",
-                "resourcePath": "objects\\obj_score\\obj_score.yy",
+                "resourcePath": "objects\/obj_score\/obj_score.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1434,7 +1434,7 @@
             "Key": "e7c55754-2b00-4f82-bab7-5a05145c64a0",
             "Value": {
                 "id": "13e75912-3427-4a29-b08e-fba17333ff48",
-                "resourcePath": "shaders\\xot_cbs_shProtanopia\\xot_cbs_shProtanopia.yy",
+                "resourcePath": "shaders\/xot_cbs_shProtanopia\/xot_cbs_shProtanopia.yy",
                 "resourceType": "GMShader"
             }
         },
@@ -1538,7 +1538,7 @@
             "Key": "f4b1b807-844e-427d-8631-f1f0ddcf04a9",
             "Value": {
                 "id": "562e1433-127c-439d-b0e5-1c4ba6a30256",
-                "resourcePath": "fonts\\fnt_ingredient_list_small\\fnt_ingredient_list_small.yy",
+                "resourcePath": "fonts\/fnt_ingredient_list_small\/fnt_ingredient_list_small.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -1567,6 +1567,14 @@
             }
         },
         {
+            "Key": "f9e56c85-8ea4-49f5-878d-518a0178379f",
+            "Value": {
+                "id": "1c745702-2c81-4403-b150-32607f582ec7",
+                "resourcePath": "sprites\/sprite68\/sprite68.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fa645225-8679-44ae-bb57-7f1be40cf144",
             "Value": {
                 "id": "b3e6fadf-5383-47b0-a275-a2758131cb87",
@@ -1578,7 +1586,7 @@
             "Key": "fd278b25-9536-456a-bf93-63293f60c25e",
             "Value": {
                 "id": "95a37dfd-ac0d-4a40-8869-dc9c1df72d23",
-                "resourcePath": "objects\\obj_cookbook\\obj_cookbook.yy",
+                "resourcePath": "objects\/obj_cookbook\/obj_cookbook.yy",
                 "resourceType": "GMObject"
             }
         },

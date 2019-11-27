@@ -41,7 +41,7 @@ notSelectedCol = c_black;
 titleCol = c_black;
 
 // Title of your game
-gameTitle = "Nodeblok";
+gameTitle = "Chesney's";
 
 // Size of the title
 titleSize = 8;
