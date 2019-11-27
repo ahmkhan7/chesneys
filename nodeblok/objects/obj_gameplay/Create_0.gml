@@ -10,11 +10,22 @@ current_recipe = 0;
 coins = 0;
 recipe = ["", ""];
 
+//Variable for speed--determined by global.speed set in options
+speed_bounds = [20, 110];
+switch(global.speed) {
+	case 0: speed_bounds = [70, 120]; break;
+	case 0.25: speed_bounds = [50, 100]; break;
+	case 0.5: speed_bounds = [20, 90]; break;
+	case 0.75: speed_bounds = [10, 70]; break;
+	case 1: speed_bounds = [0, 50]; break;
+	default: speed_bounds = [20, 110]; break;
+}
+
 //Variables for the tutorial room
 stop_guide = false;
 guideCounter = 0;
-guideText = ["There are three nodes (blue arrows) \nthat you can click on and\nthey change direction! \nClick to continue.",
-			  "Ingredients will spawn and you have\nto try to make the recipe that's on\n the menu order! \nClick to continue.",
+guideText = ["There are three nodes (blue arrows) \nthat you can click on and they \ncan change direction! \nClick to continue.",
+			  "Ingredients will spawn and you have\nto try to make the recipe that's on\nthe menu order (to the left)! \nClick to continue.",
 			  "You earn full coins for completing \nrecipes correctly, and reduced coins \nif you miss ingredients.\nClick to continue.",
 			  "Once you click me again, I will spawn\nthe ingredients, and you must buy a \nsandwich to complete the tutorial!\nClick to continue.", ""];
 

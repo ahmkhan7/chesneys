@@ -12,7 +12,7 @@ if(unlocked_items != 7) {
 	draw_text_color(x+sprite_width/2, y+220, + " " + string(obj_gameplay.coins), 0, 0, 0, 0, 100);
 
 	//Displays a button for buying the next item
-	draw_sprite(spr_rectangle, -1, 1550, 630); 
+	draw_sprite(spr_rectangle, -1, 1565, 630);
 	draw_set_font(fnt_ingredient_list_small);
 	if unlocked_items < 6
 		draw_text_color(x + sprite_width/5, y  + sprite_height/1.25, "Buy Next Recipe\n$" + 

@@ -28,7 +28,6 @@ switch(room) {
 			}
 			//Go back to the menu once they've bought a sandwich
 			if(unlocked_recipes == 1) {
-				audio_play_sound(Purchase_recipe, 1, false);
 				obj_Transition.target = menu_room; 
 				SlideTransition(TRANS_MODE.GOTO);
 			}
@@ -51,7 +50,9 @@ switch(room) {
             rand_recipe_ingred_num = irandom_range(0, 4);
             rand_recipe_ingred = recipe_ingred_list[rand_recipe, rand_recipe_ingred_num];
             instance_create_depth(rand_spawner.x, rand_spawner.y - 15, 1, rand_recipe_ingred[0]);
-            cooldown = 60 + irandom_range(20, 110);
+			//cooldown = 60 + irandom_range(20, 110);
+            cooldown = 60 + irandom_range(speed_bounds[0], speed_bounds[1]);
+			show_debug_message(string(speed_bounds[0]) + " " + string(speed_bounds[1]));
         }
         cooldown--;
 

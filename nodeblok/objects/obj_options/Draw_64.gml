@@ -23,9 +23,6 @@ if(draw) {
 			nextPos = [(width/2)-220, (height/2 - 100) + (fa_center+i*spacing)-100];
 	}
 
-	//Draw speed slider
-	instance_create_depth(nextPos[0], nextPos[1] - spacing*2 + 30, 0, obj_speed_slider);
-
 	// Getting width of cursor to separate it a bit from the menu
 	var cursWidth = sprite_get_width(s_cursor);
 

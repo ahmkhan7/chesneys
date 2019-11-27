@@ -72,7 +72,19 @@ if(keyboard_check_pressed(confirmButt))
 			global.options[2] = "Fullscreen: On";
 		}
 	}
-	
+	if(selected == 3)
+	{
+		if(global.speed == 0)
+			global.options[3] = "Speed - Very Easy";
+		else if (global.speed == 0.25)
+			global.options[3] = "Speed - Easy";
+		else if (global.speed == 0.5)
+			global.options[3] = "Speed - Medium";
+		else if (global.speed == 0.75)
+			global.options[3] = "Speed - Hard";
+		else if (global.speed == 1)
+			global.options[3] = "Speed - Challenge";	
+	}
 	if(selected == 5) // Exit to menu
 	{
 		draw = false;
@@ -160,7 +172,6 @@ if (mouse_check_button_pressed(mb_left))
 			global.options[2] = "Fullscreen: On";
 		}
 	}
-	
 	if(selected == 5) // Exit to menu
 	{
 		draw = false;
@@ -169,5 +180,21 @@ if (mouse_check_button_pressed(mb_left))
 	}
 
 }
+
+//Check this outside based on the avlue of global.speed
+if(selected == 3) {
+	if(global.speed == 0)
+		global.options[3] = "Speed - Very Easy";
+	else if (global.speed == 0.25)
+		global.options[3] = "Speed - Easy";
+	else if (global.speed == 0.5)
+		global.options[3] = "Speed - Medium";
+	else if (global.speed == 0.75)
+		global.options[3] = "Speed - Hard";
+	else if (global.speed == 1)
+		global.options[3] = "Speed - Challenge";	
+}
+
+
 		
 	

@@ -1,4 +1,5 @@
 // Menu element names. This will be what is actually drawn
+
 //For each global option, determine its state before going
 //into the options screen
 if audio_is_playing(Bustling_City)
@@ -20,7 +21,17 @@ if window_get_fullscreen()
 else
 	global.options[2] = "Full Screen: Off";
 
-global.options[3] = "Speed";
+if(global.speed == 0)
+	global.options[3] = "Speed - Very Easy";
+else if (global.speed == 0.25)
+	global.options[3] = "Speed - Easy";
+else if (global.speed == 0.5)
+	global.options[3] = "Speed - Medium";
+else if (global.speed == 0.75)
+	global.options[3] = "Speed - Hard";
+else if (global.speed == 1)
+	global.options[3] = "Speed - Challenge";
+	
 global.options[4] = "   ";
 global.options[5] = "Exit to Menu";
 	
