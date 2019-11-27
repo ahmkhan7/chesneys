@@ -4,6 +4,10 @@ global.menu[1] = "Tutorial";
 global.menu[2] = "Options";
 global.menu[3] = "Exit";
 
+//Set the cursor
+window_set_cursor(cr_none);
+cursor_sprite = spr_cursor;
+
 //Variable dictating whether to draw the menu items
 draw = true;
 

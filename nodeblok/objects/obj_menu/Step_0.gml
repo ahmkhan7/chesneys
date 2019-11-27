@@ -52,7 +52,7 @@ if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 
 		if(selected == 0) // Learning Levels Room
 			obj_Transition.target = main_room; SlideTransition(TRANS_MODE.GOTO); 
 		if(selected == 1) // How to Play Room
-			obj_Transition.target = help_room; SlideTransition(TRANS_MODE.GOTO);
+			obj_Transition.target = tutorial_room; SlideTransition(TRANS_MODE.GOTO);
 		if(selected == 2) // Options Room
 			obj_Transition.target = options_room; SlideTransition(TRANS_MODE.GOTO);
 		if(selected == 3) // Exit by default

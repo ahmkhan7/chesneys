@@ -15,19 +15,19 @@
 
 	switch(unlocked_items) {
 		case 0: //50
-			if(coins >= 20) {
+			if(coins >= 10) {
 				audio_play_sound(Purchase_recipe, 1, false);
-				coins -= 20;
+				coins -= 10;
 			} break;
 		case 1: //100
-			if(coins >= 50) {
+			if(coins >= 25) {
 				audio_play_sound(Purchase_recipe, 1, false);
-				coins -= 50;
+				coins -= 25;
 			} break;
 		case 2: //175
-			if(coins >= 100) {
+			if(coins >= 75) {
 				audio_play_sound(Purchase_recipe, 1, false);
-				coins -= 100;
+				coins -= 75;
 			} break;
 		case 3: //250
 			if(coins >= 250) {

@@ -1,7 +1,42 @@
 switch(room) {
+	case tutorial_room:
+		if(!stop_guide && mouse_check_button_released(mb_left) 
+		&& mouse_x >=721 && mouse_x <= 1214 && mouse_y >= 402 && mouse_y <= 644) {
+			guideCounter++;
+		}
+		else if(guideCounter == 4) {
+			stop_guide = true;
+			guideCounter++;
+		}
+		else if(guideCounter == 5) {
+			if(cooldown < 0) {
+				//Pick one of the spawners to spawn at
+				rand_spawner_num = irandom_range(0, 2);
+				rand_spawner = ingredient_spawners[rand_spawner_num];
+				//Spawn a random ingredient between the first and second recipe
+				rand_recipe_ingred = recipe_ingred_list[irandom_range(0, 1), irandom_range(0, 4)];
+				instance_create_depth(rand_spawner.x, rand_spawner.y - 15, 1, rand_recipe_ingred[0]);
+				cooldown = 60 + irandom_range(20, 110);
+			}
+			cooldown--;
+			
+			//Once a player finishes an order, award their coins
+			if (obj_menu_order.completed_recipe) {
+				audio_play_sound(Complete_Recipe, 1, false);
+				if(obj_cooking_pot.num_attempts == 5) coins += 10;
+				else coins += 8;
+			}
+			//Go back to the menu once they've bought a sandwich
+			if(unlocked_recipes == 1) {
+				audio_play_sound(Purchase_recipe, 1, false);
+				obj_Transition.target = menu_room; 
+				SlideTransition(TRANS_MODE.GOTO);
+			}
+		}
+		break;
     case main_room:
 		//Spawn a random ingredient every random interval
-        if(cooldown < 0) {
+        if(cooldown < 0 && !stop) {
 			//Pick one of the spawners to spawn at
             rand_spawner_num = irandom_range(0, 2);
             rand_spawner = ingredient_spawners[rand_spawner_num];

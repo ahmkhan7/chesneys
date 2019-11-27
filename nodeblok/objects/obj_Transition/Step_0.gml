@@ -16,13 +16,13 @@ if (mode != TRANS_MODE.OFF)
 				mode = TRANS_MODE.INTRO;
 				room_goto_next();
 				break;
-			case TRANS_MODE.GOTO: 
+			case TRANS_MODE.GOTO:
 				mode = TRANS_MODE.INTRO;
 				room_goto(target);
 				break;
-			case TRANS_MODE.RESTART: 
-				game_restart();
-				break;
+			//case TRANS_MODE.RESTART: 
+			//	game_restart();
+			//	break;
 		}
 		if(instance_exists(obj_menu))
 			obj_menu.draw = true;

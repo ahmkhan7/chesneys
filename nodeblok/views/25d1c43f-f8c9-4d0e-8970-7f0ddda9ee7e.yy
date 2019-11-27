@@ -8,7 +8,8 @@
         "00f8b763-e34a-412a-a419-f57013f41382",
         "5e5f1f9b-f6f9-4809-88c2-55e9c1f84032",
         "d13072f6-0f5d-49d0-b120-aa9520871c92",
-        "d1171de2-7308-43f6-81f0-eddfe46cbb9a"
+        "d1171de2-7308-43f6-81f0-eddfe46cbb9a",
+        "d9d1b373-207f-481d-b16f-a8a2dc1eb9cd"
     ],
     "filterType": "GMObject",
     "folderName": "Decoration",
