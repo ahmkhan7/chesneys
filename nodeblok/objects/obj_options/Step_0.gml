@@ -26,6 +26,7 @@ if(keyboard_check_pressed(confirmButt))
 		{
 			audio_stop_sound(Bustling_City);
 			global.options[0] = "Music: Off"
+			
 		}
 		else
 		{
@@ -40,22 +41,25 @@ if(keyboard_check_pressed(confirmButt))
 		{
 			global.shader = "none";
 			global.options[1] = "Colorblind Filter: Off";
-			//TURN OFF SHADER!!!!!
+			shader_reset();
 		}
 		else if (global.shader == "none")
 		{
 			global.shader = xot_cbs_shDeuteranopia;	
-			global.options[1] = "Colorblind Filter: Deuteranopia";
+			global.options[1] = "Colorblind Filter: Red/Green";
+			shader_set(global.shader);
 		}
 		else if (global.shader == xot_cbs_shDeuteranopia)
 		{
 			global.shader = xot_cbs_shProtanopia;	
-			global.options[1] = "Colorblind Filter: Protanopia";
+			global.options[1] = "Colorblind Filter: Green/Red";
+			shader_set(global.shader);
 		}
 		else if (global.shader == xot_cbs_shProtanopia)
 		{
 			global.shader = xot_cbs_shTritanopia;	
-			global.options[1] = "Colorblind Filter: Tritanopia";
+			global.options[1] = "Colorblind Filter: Blue/Yellow";
+			shader_set(global.shader);
 		}
 	}
 	
