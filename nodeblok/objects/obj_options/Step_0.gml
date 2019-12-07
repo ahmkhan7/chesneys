@@ -53,19 +53,19 @@ if(keyboard_check_pressed(confirmButt))
 		else if (global.shader == "none")
 		{
 			global.shader = xot_cbs_shDeuteranopia;	
-			global.options[1] = "Colorblind Filter: Red/Green";
+			global.options[1] = "Colorblind Filter: Deuteranopia";
 			shader_set(global.shader);
 		}
 		else if (global.shader == xot_cbs_shDeuteranopia)
 		{
 			global.shader = xot_cbs_shProtanopia;	
-			global.options[1] = "Colorblind Filter: Green/Red";
+			global.options[1] = "Colorblind Filter: Protanopia";
 			shader_set(global.shader);
 		}
 		else if (global.shader == xot_cbs_shProtanopia)
 		{
 			global.shader = xot_cbs_shTritanopia;	
-			global.options[1] = "Colorblind Filter: Blue/Yellow";
+			global.options[1] = "Colorblind Filter: Tritanopia";
 			shader_set(global.shader);
 		}
 	}
@@ -153,19 +153,19 @@ if (mouse_check_button_pressed(mb_left))
 		else if (global.shader == "none")
 		{
 			global.shader = xot_cbs_shDeuteranopia;	
-			global.options[1] = "Colorblind Filter: Red/Green";
+			global.options[1] = "Colorblind Filter: Deuteranopia";
 			shader_set(global.shader);
 		}
 		else if (global.shader == xot_cbs_shDeuteranopia)
 		{
 			global.shader = xot_cbs_shProtanopia;	
-			global.options[1] = "Colorblind Filter: Green/Red";
+			global.options[1] = "Colorblind Filter: Protanopia";
 			shader_set(global.shader);
 		}
 		else if (global.shader == xot_cbs_shProtanopia)
 		{
 			global.shader = xot_cbs_shTritanopia;	
-			global.options[1] = "Colorblind Filter: Blue/Yellow";
+			global.options[1] = "Colorblind Filter: Tritanopia";
 			shader_set(global.shader);
 		}
 	}

@@ -65,6 +65,12 @@ switch(room) {
 		}
 }
 
+//play sound on mouse click
+if (mouse_check_button_pressed(mb_left))
+{
+	audio_play_sound(Mouse_Click, 1, false);
+}
+
 
     /*
     case tutorial_room:

@@ -1007,6 +1007,14 @@
             }
         },
         {
+            "Key": "a3e2c1e6-3e39-4280-83ca-93a37f91a48d",
+            "Value": {
+                "id": "261a97c8-8b69-4160-830f-6f68d7ad6b6c",
+                "resourcePath": "sounds\\Mouse_Click\\Mouse_Click.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a4066273-e40d-4f3c-ba3f-b9ecf1f8b25c",
             "Value": {
                 "id": "078d905d-6f66-405d-a542-4b6d13b900e5",
