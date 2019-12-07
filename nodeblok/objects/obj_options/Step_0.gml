@@ -16,6 +16,13 @@ selectLerp = lerp(selectLerp, selected, lerpAmt); // Smooth cursor movement
 // Don't let cursor move past where it should be
 selected = clamp(selected, 0, array_length_1d(global.options) - 1);
 
+
+//for speed settings, skips phantom option in order to allow room in the menu for the slider
+if (selected == 4)
+{
+	selected += vert;
+}
+
 // Whenever you press the confirm button, do whatever
 // it should do depending on what menu element is selected
 if(keyboard_check_pressed(confirmButt))
@@ -185,7 +192,7 @@ if (mouse_check_button_pressed(mb_left))
 
 }
 
-//Check this outside based on the avlue of global.speed
+//Check this outside based on the value of global.speed
 if(selected == 3) {
 	if(global.speed == 0)
 		global.options[3] = "Speed - Very Easy";
