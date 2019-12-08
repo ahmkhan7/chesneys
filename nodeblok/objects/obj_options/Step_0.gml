@@ -86,26 +86,73 @@ if(keyboard_check_pressed(confirmButt))
 	if(selected == 3)
 	{
 		if(global.speed == 0)
-			global.options[3] = "Speed - Very Easy";
+			global.options[3] = "Difficulty - Very Easy";
 		else if (global.speed == 0.25)
-			global.options[3] = "Speed - Easy";
+			global.options[3] = "Difficulty - Easy";
 		else if (global.speed == 0.5)
-			global.options[3] = "Speed - Medium";
+			global.options[3] = "Difficulty - Medium";
 		else if (global.speed == 0.75)
-			global.options[3] = "Speed - Hard";
+			global.options[3] = "Difficulty - Hard";
 		else if (global.speed == 1)
-			global.options[3] = "Speed - Challenge";	
+			global.options[3] = "Difficulty - Challenge";	
 	}
 	if(selected == 5) // Exit to menu
 	{
 		draw = false;
+		if(instance_exists(obj_speed_slider))
+			obj_speed_slider.draw = false;
 		obj_Transition.target = menu_room;
 		SlideTransition(TRANS_MODE.GOTO);
 	}
 }
 
-// Mouse Override 
+//Arrow key capability for changing the color blind filter options
+if(selected == 1 && keyboard_check_pressed(vk_right)) {
+	if (global.shader == xot_cbs_shTritanopia) {
+		global.shader = "none";
+		global.options[1] = "Colorblind Filter: Off";
+		shader_reset();
+	}
+	else if (global.shader == "none") {
+		global.shader = xot_cbs_shDeuteranopia;	
+		global.options[1] = "Colorblind Filter: Deuteranopia";
+		shader_set(global.shader);
+	}
+	else if (global.shader == xot_cbs_shDeuteranopia) {
+		global.shader = xot_cbs_shProtanopia;	
+		global.options[1] = "Colorblind Filter: Protanopia";
+		shader_set(global.shader);
+	}
+	else if (global.shader == xot_cbs_shProtanopia) {
+		global.shader = xot_cbs_shTritanopia;	
+		global.options[1] = "Colorblind Filter: Tritanopia";
+		shader_set(global.shader);
+	}
+}
+else if(selected == 1 && keyboard_check_pressed(vk_left)) {
+	if (global.shader == xot_cbs_shTritanopia) {
+		global.shader = xot_cbs_shProtanopia;
+		global.options[1] = "Colorblind Filter: Protanopia";
+		shader_set(global.shader);
+	}
+	else if (global.shader == "none") {
+		global.shader = xot_cbs_shTritanopia;	
+		global.options[1] = "Colorblind Filter: Tritanopia";
+		shader_set(global.shader);
+	}
+	else if (global.shader == xot_cbs_shDeuteranopia) {
+		global.shader = "none";	
+		global.options[1] = "Colorblind Filter: Off";
+		shader_reset();
+	}
+	else if (global.shader == xot_cbs_shProtanopia) {
+		global.shader = xot_cbs_shDeuteranopia;	
+		global.options[1] = "Colorblind Filter: Deuteranopia";
+		shader_set(global.shader);
+	}
+}
 
+// Mouse Override 
 var mouse_y_gui = mouse_y;
 var mouse_x_gui = mouse_x;
 if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 700 && mouse_x_gui <= 1300)
@@ -186,6 +233,8 @@ if (mouse_check_button_pressed(mb_left))
 	if(selected == 5) // Exit to menu
 	{
 		draw = false;
+		if(instance_exists(obj_speed_slider))
+			obj_speed_slider.draw = false;
 		obj_Transition.target = menu_room;
 		SlideTransition(TRANS_MODE.GOTO);
 	}
@@ -195,17 +244,17 @@ if (mouse_check_button_pressed(mb_left))
 //Check this outside based on the value of global.speed
 if(selected == 3) {
 	if(global.speed == 0)
-		global.options[3] = "Speed - Very Easy";
+		global.options[3] = "Difficulty - Very Easy";
 	else if (global.speed == 0.25)
-		global.options[3] = "Speed - Easy";
+		global.options[3] = "Difficulty - Easy";
 	else if (global.speed == 0.5)
-		global.options[3] = "Speed - Medium";
+		global.options[3] = "Difficulty - Medium";
 	else if (global.speed == 0.75)
-		global.options[3] = "Speed - Hard";
+		global.options[3] = "Difficulty - Hard";
 	else if (global.speed == 1)
-		global.options[3] = "Speed - Challenge";	
+		global.options[3] = "Difficulty - Challenge";	
 }
 
-
-		
-	
+//play sound on mouse click
+if (mouse_check_button_pressed(mb_left) && room == options_room)
+	audio_play_sound(Mouse_Click, 1, false);

@@ -12,7 +12,8 @@ with(first_node) {
     targetList[1] = [first_trash_can.x, first_trash_can.y];
     currentTarget = 0;
     target = targetList[currentTarget];
-    direction = point_direction(x , y, target[0], target[1]);
+	sprite_index = spr_node;
+	image_angle = point_direction(x , y, target[0], target[1]);
 }
 with(second_node) {
     first_node = instance_nearest(0, 0, obj_node);
@@ -23,7 +24,7 @@ with(second_node) {
     targetList[2] = [first_node.x, first_node.y];
     currentTarget = 0;
     target = targetList[currentTarget];
-    direction = point_direction(x , y, target[0], target[1]);
+	sprite_index = spr_node_mid1;
 }
 with(third_node) {
     second_node = instance_nth_nearest(0, 0, obj_node, 2);
@@ -32,5 +33,6 @@ with(third_node) {
     targetList[1] = [second_trash_can.x, second_trash_can.y];
     currentTarget = 0;
     target = targetList[currentTarget];
-    direction = point_direction(x , y, target[0], target[1]);
+	sprite_index = spr_node;
+	image_angle = point_direction(x , y, target[0], target[1]);
 }

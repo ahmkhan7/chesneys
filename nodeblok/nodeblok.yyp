@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "063f808b-73dc-4462-a46e-830734dac3b2",
+            "Value": {
+                "id": "cb558a3a-a515-4c26-9170-00473226a6ca",
+                "resourcePath": "sprites\\spr_node_right1\\spr_node_right1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0878ac55-7b5b-42dc-a8c3-d9b7ae0c64b4",
             "Value": {
                 "id": "b959c82e-a111-4c86-88bb-ee0384aeb036",
@@ -719,6 +727,14 @@
             }
         },
         {
+            "Key": "74084afd-682f-4b11-a24e-06158f47b2ed",
+            "Value": {
+                "id": "cf546add-a846-47cc-96cc-322f88897845",
+                "resourcePath": "sprites\\spr_node_mid3\\spr_node_mid3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "74871266-ecfd-465f-bb5b-5ebc52638954",
             "Value": {
                 "id": "da677a8b-9466-425e-86b7-001993729887",
@@ -811,6 +827,14 @@
             "Value": {
                 "id": "ffd823ec-cd53-4cac-899a-e38927d7191b",
                 "resourcePath": "sprites\/spr_cookbook\/spr_cookbook.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8a3132c2-7550-461d-bb79-ae5255666012",
+            "Value": {
+                "id": "a578c6da-662f-4854-b087-22e445c7da4e",
+                "resourcePath": "sprites\\spr_node_right2\\spr_node_right2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1191,6 +1215,14 @@
             }
         },
         {
+            "Key": "b98fdb84-3a00-4084-a8ed-53d80808b60d",
+            "Value": {
+                "id": "005910a9-73b5-4b4a-8803-9b32efbbbc81",
+                "resourcePath": "sprites\\spr_node_mid2\\spr_node_mid2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b9f16003-94e1-4467-abec-677355c4e7e0",
             "Value": {
                 "id": "fdd9975e-2e87-4b19-bc64-be306960eb5f",
@@ -1204,14 +1236,6 @@
                 "id": "9d08e3af-55a5-43b6-b99a-8d41c1220825",
                 "resourcePath": "scripts\/award_coins\/award_coins.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "bbc70b5c-b458-4c52-896f-f6a18ab0f397",
-            "Value": {
-                "id": "f7a07e85-cfa4-4b77-9e9f-c0f549672824",
-                "resourcePath": "objects\/obj_HowToPlay\/obj_HowToPlay.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1359,6 +1383,14 @@
             }
         },
         {
+            "Key": "cf6362da-27ab-4bb7-bdee-7d18fde7251a",
+            "Value": {
+                "id": "4996bd73-5192-4cea-8a8a-c794f2965d34",
+                "resourcePath": "sprites\\spr_node_left2\\spr_node_left2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d1171de2-7308-43f6-81f0-eddfe46cbb9a",
             "Value": {
                 "id": "4026e905-48ae-41d7-be34-9db287789ee9",
@@ -1372,6 +1404,14 @@
                 "id": "dec9d8a9-7550-4182-b8b3-a99c83326b27",
                 "resourcePath": "objects\/obj_boxed_potatos\/obj_boxed_potatos.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d274adf5-0122-4f80-a6e6-1f4e7673d29c",
+            "Value": {
+                "id": "58a5aae9-1346-4c0c-b466-854764b07d0d",
+                "resourcePath": "sprites\\spr_node_mid1\\spr_node_mid1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1395,6 +1435,14 @@
             "Value": {
                 "id": "b81f3d68-8d26-4c35-80e7-d19b84b0e0e8",
                 "resourcePath": "sprites\/spr_cooking_pot\/spr_cooking_pot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d5c282f5-db87-4927-9532-e73f67f176f8",
+            "Value": {
+                "id": "852e715e-21d6-41d2-9707-72c7c601c6e2",
+                "resourcePath": "sprites\\spr_node_left1\\spr_node_left1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1556,6 +1604,14 @@
                 "id": "6888f39a-bb77-487a-9c91-18c1936fc9c2",
                 "resourcePath": "sounds\/Bustling_City\/Bustling_City.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "f181ab2f-2f7e-4958-a5ea-a77e598997a6",
+            "Value": {
+                "id": "de4ea6f4-54b5-4bbc-917d-a7702ad85f34",
+                "resourcePath": "views\\f181ab2f-2f7e-4958-a5ea-a77e598997a6.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

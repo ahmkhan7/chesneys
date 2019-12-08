@@ -59,7 +59,7 @@ if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 
 			game_end();
 	}
 }
-	
+
 //Code that displays ingredients on the conveyer belt
 //Loops through all recipes, displaying their ingredients
 if (cooldown < 0) {

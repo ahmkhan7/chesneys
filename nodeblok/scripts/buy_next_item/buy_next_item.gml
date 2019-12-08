@@ -13,33 +13,35 @@
 	unlocked_items = argument1;
 	coins_before_purchase = coins;
 
+	//Subtract coins by the cost of the item if
+	//the player can able to afford the item.
 	switch(unlocked_items) {
-		case 0: //50
+		case 0:
 			if(coins >= 10) {
 				audio_play_sound(Purchase_recipe, 1, false);
 				coins -= 10;
 			} break;
-		case 1: //100
+		case 1:
 			if(coins >= 25) {
 				audio_play_sound(Purchase_recipe, 1, false);
 				coins -= 25;
 			} break;
-		case 2: //175
+		case 2:
 			if(coins >= 75) {
 				audio_play_sound(Purchase_recipe, 1, false);
 				coins -= 75;
 			} break;
-		case 3: //250
+		case 3:
 			if(coins >= 250) {
 				audio_play_sound(Purchase_recipe, 1, false);
 				coins -= 250;
 			} break;
-		case 4: //600
+		case 4:
 			if(coins >= 450) {
 				audio_play_sound(Purchase_recipe, 1, false);
 				coins -= 450;
 			} break;
-		case 5: //
+		case 5:
 			if(coins >= 800) {
 				audio_play_sound(Purchase_recipe, 1, false);
 				coins -= 800;
@@ -51,10 +53,10 @@
 			} break;
 	}
 	
-	if(coins_before_purchase == coins) {
-		//play a sound!!!!
+	//If they cannot afford it, no points are subtracted
+	//Return -1 to indicate that
+	if(coins_before_purchase == coins)
 		return -1;
-	}
 	
 	return coins;
 }

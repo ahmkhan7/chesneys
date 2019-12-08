@@ -1,2 +1,3 @@
 //Chesney mode!
-coins += 250;
+if(room != tutorial_room)
+	coins += 150;

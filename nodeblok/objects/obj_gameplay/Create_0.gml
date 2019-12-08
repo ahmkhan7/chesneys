@@ -24,10 +24,12 @@ switch(global.speed) {
 //Variables for the tutorial room
 stop_guide = false;
 guideCounter = 0;
-guideText = ["There are three nodes (blue arrows) \nthat you can click on and they \ncan change direction! \nClick to continue.",
+guideText = ["There are three nodes (blue arrows) \nthat you can click on and they can \nchange direction! \nClick to continue.",
 			  "Ingredients will spawn and you have\nto try to make the recipe that's on\nthe menu order (to the left)! \nClick to continue.",
-			  "You earn full coins for completing \nrecipes correctly, and reduced coins \nif you miss ingredients.\nClick to continue.",
-			  "Once you click me again, I will spawn\nthe ingredients, and you must buy a \nsandwich to complete the tutorial!\nClick to continue.", ""];
+			  "You earn full coins for completing \nrecipes correctly, and reduced coins \nif you use wrong ingredients.\nClick to continue.",
+			  "Your goal is to buy all the recipes\nusing the cookbook (to the right).\nThe cost goes up every recipe.\nClick to continue.",
+			  "Once you buy all the recipes, you\nhave to earn enough money to buy \nthe final jetpack to win!\nClick to continue.",
+			  "Once you click again, I will spawn the\ningredients, and you must buy a \nsandwich to complete the tutorial!\nClick to continue.", ""];
 
 //Create an array for the three ingredient spawner instances along the top
 ingredient_spawners = [instance_nearest(0, 0, obj_ingredient_spawner),

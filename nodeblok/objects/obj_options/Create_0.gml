@@ -10,11 +10,11 @@ else
 if (global.shader == "none") 
 	global.options[1] = "Colorblind Filter: Off";
 else if (global.shader == xot_cbs_shDeuteranopia)
-	global.options[1] = "Colorblind Filter: Red/Green";
+	global.options[1] = "Colorblind Filter: Deuteranopia";
 else if (global.shader == xot_cbs_shProtanopia)
-	global.options[1] = "Colorblind Filter: Green/Red";
+	global.options[1] = "Colorblind Filter: Protanopia";
 else if (global.shader == xot_cbs_shTritanopia)
-	global.options[1] = "Colorblind Filter: Blue/Yellow";
+	global.options[1] = "Colorblind Filter: Tritanopia";
 
 if window_get_fullscreen()
 	global.options[2] = "Full Screen: On";
@@ -22,15 +22,15 @@ else
 	global.options[2] = "Full Screen: Off";
 
 if(global.speed == 0)
-	global.options[3] = "Speed - Very Easy";
+	global.options[3] = "Difficulty - Very Easy";
 else if (global.speed == 0.25)
-	global.options[3] = "Speed - Easy";
+	global.options[3] = "Difficulty - Easy";
 else if (global.speed == 0.5)
-	global.options[3] = "Speed - Medium";
+	global.options[3] = "Difficulty - Medium";
 else if (global.speed == 0.75)
-	global.options[3] = "Speed - Hard";
+	global.options[3] = "Difficulty - Hard";
 else if (global.speed == 1)
-	global.options[3] = "Speed - Challenge";
+	global.options[3] = "Difficulty - Challenge";
 	
 global.options[4] = "   ";
 global.options[5] = "Exit to Menu";
