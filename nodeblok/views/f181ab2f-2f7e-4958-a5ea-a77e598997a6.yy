@@ -11,7 +11,9 @@
         "8a3132c2-7550-461d-bb79-ae5255666012",
         "d5c282f5-db87-4927-9532-e73f67f176f8",
         "cf6362da-27ab-4bb7-bdee-7d18fde7251a",
-        "063f808b-73dc-4462-a46e-830734dac3b2"
+        "063f808b-73dc-4462-a46e-830734dac3b2",
+        "87a660bd-b257-4ad1-a263-e9baf622fcbe",
+        "eada23db-5e96-45f6-9091-93e86cd188cf"
     ],
     "filterType": "GMSprite",
     "folderName": "node_phases",
