@@ -1,5 +1,5 @@
 with(first_node) {
-	if(point_in_rectangle(mouse_x, mouse_y, 517, 459, 642, 585)) {
+	if(keyboard_check_pressed(ord("K"))) {
 		if (currentTarget < array_length_1d(targetList) - 1)
 			currentTarget++;
 		else
@@ -7,6 +7,7 @@ with(first_node) {
 		
 		target = targetList[currentTarget];
 		image_angle = point_direction(x , y, target[0], target[1]);
+		//audio_play_sound(Mouse_Click, 1, false);
 	}
 	
 	/*//Determine which arrow the user pressed and change the target/sprite accordingly
@@ -22,22 +23,25 @@ with(first_node) {
 
 with(second_node) {
 	//Determine which arrow the user pressed and change the target/sprite accordingly
-	if(point_in_rectangle(mouse_x, mouse_y, 948, 541, 981, 575)) {
+	if(keyboard_check_pressed(ord("S"))) {
 		target = targetList[0];
 		sprite_index = spr_node_mid1;
+		//audio_play_sound(Mouse_Click, 1, false);
 	}
-	else if(point_in_rectangle(mouse_x, mouse_y, 982, 507, 1016, 540)) {
+	else if(keyboard_check_pressed(ord("D"))) {
 		target = targetList[1];
 		sprite_index = spr_node_mid2;
+		//audio_play_sound(Mouse_Click, 1, false);
 	}
-	else if(point_in_rectangle(mouse_x, mouse_y, 910, 507, 944, 540)) {
+	else if(keyboard_check_pressed(ord("A"))) {
 		target = targetList[2];
 		sprite_index = spr_node_mid3;
+		//audio_play_sound(Mouse_Click, 1, false);
 	}
 }
 
 with(third_node) {
-	if(point_in_rectangle(mouse_x, mouse_y, 1284, 460, 1410, 585)) {
+	if(keyboard_check_pressed(ord("L"))) {
 		if (currentTarget < array_length_1d(targetList) - 1)
 			currentTarget++;
 		else
@@ -45,6 +49,7 @@ with(third_node) {
 		
 		target = targetList[currentTarget];
 		image_angle = point_direction(x , y, target[0], target[1]);
+		//audio_play_sound(Mouse_Click, 1, false);
 	}
 	
 	/*

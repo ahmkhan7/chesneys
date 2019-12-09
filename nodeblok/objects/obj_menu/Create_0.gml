@@ -72,3 +72,7 @@ ingredient_spawner.target = [2100, 880];
 
 //Global variable for shader
 global.shader = "none";
+
+//Variables that store previous mouse position
+mxprev = mouse_x;
+myprev = mouse_y;

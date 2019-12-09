@@ -30,12 +30,18 @@ if(keyboard_check_pressed(confirmButt)) {
 		game_end();
 }
 
+//Get distance from prev mouse to real-time mouse
+var moving = point_distance(mxprev, myprev, mouse_x, mouse_y);
+
+//Update positions of prev mouse
+mxprev = mouse_x;
+myprev = mouse_y;
 
 //Mouse Over Menu Overide
 var mouse_y_gui = mouse_y;
 var mouse_x_gui = mouse_x;
 
-if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 700 && mouse_x_gui <= 1100) {
+if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 700 && mouse_x_gui <= 1100) && moving {
 	if(mouse_y_gui >= menu_top && mouse_y_gui < menu_top + spacing)
 		selected = 0;
 	else if (mouse_y_gui >= menu_top + spacing && mouse_y_gui < menu_top + spacing * 2)
@@ -57,6 +63,18 @@ if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 
 			obj_Transition.target = options_room; SlideTransition(TRANS_MODE.GOTO);
 		if(selected == 3) // Exit by default
 			game_end();
+	}
+}
+else if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 700 && mouse_x_gui <= 1100) && !moving {
+	if (mouse_check_button_pressed(mb_left)) {
+		if(selected == 0 && mouse_y_gui >= menu_top && mouse_y_gui < menu_top + spacing) {// Learning Levels Room
+			draw = false; obj_Transition.target = main_room; SlideTransition(TRANS_MODE.GOTO); }
+		if(selected == 1 && mouse_y_gui >= menu_top + spacing && mouse_y_gui < menu_top + spacing * 2) {// How to Play Room
+			draw = false; obj_Transition.target = tutorial_room; SlideTransition(TRANS_MODE.GOTO); }
+		if(selected == 2 && mouse_y_gui >= menu_top + spacing * 2 && mouse_y_gui < menu_top + spacing * 3) { // Options Room
+			draw = false; obj_Transition.target = options_room; SlideTransition(TRANS_MODE.GOTO); }
+		if(selected == 3 && mouse_y_gui >= menu_top + spacing * 3 && mouse_y_gui < menu_bottom) // Exit by default
+			game_end(); 
 	}
 }
 
