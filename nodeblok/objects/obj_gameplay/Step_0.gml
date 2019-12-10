@@ -1,6 +1,6 @@
-switch(room) {
+switch(room) { //executes appropriate gameplay code depending on current room.
 	case tutorial_room:
-		if(!stop_guide && mouse_check_button_released(mb_left) 
+		if(!stop_guide && mouse_check_button_released(mb_left) //plays next tutorial text if more is available
 		&& mouse_x >=721 && mouse_x <= 1214 && mouse_y >= 402 && mouse_y <= 644) {
 			guideCounter++;
 		}
@@ -8,7 +8,7 @@ switch(room) {
 			stop_guide = true;
 			guideCounter++;
 		}
-		else if(guideCounter == 7) {
+		else if(guideCounter == 7) { //begins tutorial after all text has been scrolled through
 			if(cooldown < 0) {
 				//Pick one of the spawners to spawn at
 				rand_spawner_num = irandom_range(0, 2);
