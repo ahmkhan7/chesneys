@@ -24,9 +24,11 @@ if(keyboard_check_pressed(confirmButt)) {
 		obj_Transition.target = main_room; SlideTransition(TRANS_MODE.GOTO); 
 	if(selected == 1) // Tutorial Room
 		obj_Transition.target = tutorial_room; SlideTransition(TRANS_MODE.GOTO);
-	if(selected == 2) // Options Room
+	if(selected == 2) // Controls Room
+		obj_Transition.target = controls_room; SlideTransition(TRANS_MODE.GOTO);
+	if(selected == 3) // Options Room
 		obj_Transition.target = options_room; SlideTransition(TRANS_MODE.GOTO);
-	if(selected == 3) // Exit by default
+	if(selected == 4) // Exit by default
 		game_end();
 }
 
@@ -48,8 +50,10 @@ if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 
 		selected = 1;
 	else if (mouse_y_gui >= menu_top + spacing * 2 && mouse_y_gui < menu_top + spacing * 3)
 		selected = 2;
-	else if (mouse_y_gui >= menu_top + spacing * 3 && mouse_y_gui < menu_bottom)
+	else if (mouse_y_gui >= menu_top + spacing * 3 && mouse_y_gui < menu_top + spacing * 4)
 		selected = 3;
+	else if (mouse_y_gui >= menu_top + spacing * 4 && mouse_y_gui < menu_bottom)
+		selected = 4;
 		
 	selectLerp = lerp(selectLerp, selected, lerpAmt); // Smooth cursor movement
 		
@@ -59,9 +63,11 @@ if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 
 			obj_Transition.target = main_room; SlideTransition(TRANS_MODE.GOTO); 
 		if(selected == 1) // How to Play Room
 			obj_Transition.target = tutorial_room; SlideTransition(TRANS_MODE.GOTO);
-		if(selected == 2) // Options Room
+		if(selected == 2) // How to Play Room
+			obj_Transition.target = controls_room; SlideTransition(TRANS_MODE.GOTO);
+		if(selected == 3) // Options Room
 			obj_Transition.target = options_room; SlideTransition(TRANS_MODE.GOTO);
-		if(selected == 3) // Exit by default
+		if(selected == 4) // Exit by default
 			game_end();
 	}
 }
@@ -72,8 +78,10 @@ else if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gu
 		if(selected == 1 && mouse_y_gui >= menu_top + spacing && mouse_y_gui < menu_top + spacing * 2) {// How to Play Room
 			draw = false; obj_Transition.target = tutorial_room; SlideTransition(TRANS_MODE.GOTO); }
 		if(selected == 2 && mouse_y_gui >= menu_top + spacing * 2 && mouse_y_gui < menu_top + spacing * 3) { // Options Room
+			draw = false; obj_Transition.target = controls_room; SlideTransition(TRANS_MODE.GOTO); }
+		if(selected == 3 && mouse_y_gui >= menu_top + spacing * 3 && mouse_y_gui < menu_top + spacing * 4) { // Options Room
 			draw = false; obj_Transition.target = options_room; SlideTransition(TRANS_MODE.GOTO); }
-		if(selected == 3 && mouse_y_gui >= menu_top + spacing * 3 && mouse_y_gui < menu_bottom) // Exit by default
+		if(selected == 4 && mouse_y_gui >= menu_top + spacing * 4 && mouse_y_gui < menu_bottom) // Exit by default
 			game_end(); 
 	}
 }

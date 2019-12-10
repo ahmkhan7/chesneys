@@ -1,8 +1,9 @@
 // Menu element names. This will be what is actually drawn
 global.menu[0] = "Play";
 global.menu[1] = "Tutorial";
-global.menu[2] = "Options";
-global.menu[3] = "Exit";
+global.menu[2] = "Controls";
+global.menu[3] = "Options";
+global.menu[4] = "Exit";
 
 //Set the cursor
 window_set_cursor(cr_none);

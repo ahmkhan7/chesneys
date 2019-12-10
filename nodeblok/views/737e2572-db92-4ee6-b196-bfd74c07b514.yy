@@ -11,7 +11,8 @@
         "4c209121-c1ce-4506-89ac-8081e76fe3a9",
         "72b6869a-07a8-4708-b73c-f7c82cc22446",
         "4985a7a5-8f94-4af6-a3dc-28fe6ebda5e0",
-        "6d60c25f-58c2-4b20-ac57-6ba80418cd34"
+        "6d60c25f-58c2-4b20-ac57-6ba80418cd34",
+        "e62480ec-4f7c-4d29-8c69-8f8a85f1999f"
     ],
     "filterType": "GMSprite",
     "folderName": "Backgrounds and Cursors",
