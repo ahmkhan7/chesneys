@@ -71,6 +71,14 @@ cooldown = 0;
 ingredient_spawner = instance_nearest(0, 0, obj_ingredient_spawner);
 ingredient_spawner.target = [2100, 880];
 
+// Creating a cooldown timer for the menu voice overs
+cooldown_time = 120;
+cooldown_play = 0;
+cooldown_tutorial = 0;
+cooldown_controls = 0;
+cooldown_options = 0;
+cooldown_exit = 0;
+
 //Global variable for shader
 global.shader = "none";
 

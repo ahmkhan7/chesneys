@@ -45,16 +45,91 @@ var mouse_x_gui = mouse_x;
 
 if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 700 && mouse_x_gui <= 1100) && moving {
 	if(mouse_y_gui >= menu_top && mouse_y_gui < menu_top + spacing)
+	{
 		selected = 0;
+		
+		if !(audio_is_playing(play))
+		and !(audio_is_playing(tutorial))
+		and !(audio_is_playing(options))
+		and !(audio_is_playing(controls))
+		and !(audio_is_playing(Exit_sound))
+		and cooldown_play <= 0
+		{
+			audio_play_sound(play, 1, false)
+			cooldown_play = cooldown_time;
+		}
+		
+		
+	}
 	else if (mouse_y_gui >= menu_top + spacing && mouse_y_gui < menu_top + spacing * 2)
+	{
 		selected = 1;
+		
+		if !(audio_is_playing(play))
+		and !(audio_is_playing(tutorial))
+		and !(audio_is_playing(options))
+		and !(audio_is_playing(controls))
+		and !(audio_is_playing(Exit_sound))
+		and cooldown_tutorial <= 0
+		{
+			audio_play_sound(tutorial, 1, false)
+			cooldown_tutorial = cooldown_time;
+		}
+		
+		
+		
+	}
 	else if (mouse_y_gui >= menu_top + spacing * 2 && mouse_y_gui < menu_top + spacing * 3)
+	{
 		selected = 2;
+		
+		if !(audio_is_playing(play))
+		and !(audio_is_playing(tutorial))
+		and !(audio_is_playing(options))
+		and !(audio_is_playing(controls))
+		and !(audio_is_playing(Exit_sound))
+		and cooldown_controls <= 0
+		{
+			audio_play_sound(controls, 1, false)
+			cooldown_controls = cooldown_time;
+		}
+		
+		
+	}
 	else if (mouse_y_gui >= menu_top + spacing * 3 && mouse_y_gui < menu_top + spacing * 4)
+	{
 		selected = 3;
+		
+		if !(audio_is_playing(play))
+		and !(audio_is_playing(tutorial))
+		and !(audio_is_playing(options))
+		and !(audio_is_playing(controls))
+		and !(audio_is_playing(Exit_sound))
+		and cooldown_options <= 0 
+		{
+			audio_play_sound(options, 1, false)
+			cooldown_options = cooldown_time;
+		}
+		
+		
+	}
 	else if (mouse_y_gui >= menu_top + spacing * 4 && mouse_y_gui < menu_bottom)
+	{
 		selected = 4;
 		
+		if !(audio_is_playing(play))
+		and !(audio_is_playing(tutorial))
+		and !(audio_is_playing(options))
+		and !(audio_is_playing(controls))
+		and !(audio_is_playing(Exit_sound))
+		and cooldown_exit <= 0
+		{
+			audio_play_sound(Exit_sound, 1, false)
+			cooldown_exit = cooldown_time;
+		}
+		
+		
+	}
 	selectLerp = lerp(selectLerp, selected, lerpAmt); // Smooth cursor movement
 		
 	if (mouse_check_button_pressed(mb_left)) {
@@ -96,5 +171,13 @@ if (cooldown < 0) {
 								  recipe[0]);
 	cooldown = 80;
 	r++;
+	
 }
+
+// Lowering all the cooldown counters
 cooldown--;
+cooldown_play = cooldown_play - 1;
+cooldown_tutorial = cooldown_tutorial - 1;
+cooldown_controls = cooldown_controls - 1;
+cooldown_options = cooldown_options - 1;
+cooldown_exit = cooldown_exit - 1;
