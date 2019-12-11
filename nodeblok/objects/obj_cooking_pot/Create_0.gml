@@ -6,3 +6,4 @@ recipe_list = obj_gameplay.recipe_list;
 recipe_ingred_list = obj_gameplay.recipe_ingred_list;
 recipe_ds = ds_map_create();
 num_attempts = 0;
+wrong_ingredients = 0;

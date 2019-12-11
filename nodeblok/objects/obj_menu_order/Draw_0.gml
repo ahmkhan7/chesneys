@@ -3,7 +3,7 @@ draw_self();
 draw_set_font(fnt_ingredient_list);
 var spacing = 55;
 var indent = 50;
-var attempts = obj_cooking_pot.num_attempts;
+var attempts = obj_cooking_pot.wrong_ingredients;
 var earned_coins = 0;
 draw_set_halign(fa_left);
 
@@ -30,8 +30,7 @@ for(i = 0; i < size; ++i) {
 }
 
 
-//Displays how many coins player will recieve for completing recipe
-
+//Displays how many coins player will receive for completing recipe
 switch(recipe_name) {
 	case "Salad":
 		earned_coins += 10; break;
@@ -51,12 +50,12 @@ switch(recipe_name) {
 		earned_coins = 0; break;
 }
 
-if(attempts - 5 > 0 && attempts - 5 <= 5)
+if(attempts > 0 && attempts <= 5)
 	earned_coins -= earned_coins * 0.20;
-else if(attempts - 5 > 6 && attempts - 5 <= 10)
+else if(attempts >= 6 && attempts <= 10)
 	earned_coins -= earned_coins * 0.40;
-else if(attempts > 11)
+else if(attempts >= 11)
 	earned_coins -= earned_coins * 0.70; 
 
-draw_sprite_ext(spr_coin, image_index,  x + indent , y + 245 + spacing*size, .4, .4, 0, c_white, 1);
-draw_text_color(x + indent*2, y + 275 + spacing*size, "Reward: " +  string(earned_coins), c_blue, c_red, c_blue, c_red, 1);
+draw_sprite_ext(spr_coin, image_index,  x + indent , y + 245 + spacing*5, .4, .4, 0, c_white, 1);
+draw_text_color(x + indent*2, y + 275 + spacing*5, "Reward: " +  string(earned_coins), c_blue, c_red, c_blue, c_red, 1);

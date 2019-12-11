@@ -9,6 +9,7 @@ if ds_map_exists(recipe_ds, key) {
 		obj_menu_order.completed_recipe = true;
 }
 else {
+	++wrong_ingredients;
 	audio_play_sound(Incorrect_Ingredient, 1, false);	
 }
 ++num_attempts;

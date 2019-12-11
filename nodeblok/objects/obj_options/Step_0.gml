@@ -162,7 +162,7 @@ myprev = mouse_y;
 // Mouse Override 
 var mouse_y_gui = mouse_y;
 var mouse_x_gui = mouse_x;
-if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 700 && mouse_x_gui <= 1300) && moving
+if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 700 && mouse_x_gui <= 1300) && moving && !mouse_check_button_pressed(mb_left)
 {
 	if(mouse_y_gui >= menu_top && mouse_y_gui < menu_top + spacing) {
 		selected = 0;
@@ -175,6 +175,71 @@ if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 
 	} else if (mouse_y_gui >= menu_top + spacing * 5 && mouse_y_gui < menu_bottom) {
 		selected = 5;
 	}
+}
+else if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 700 && mouse_x_gui <= 1300) && moving && mouse_check_button_pressed(mb_left) {
+	if(selected == 0 && (mouse_y_gui >= menu_top && mouse_y_gui < menu_top + spacing)) // Toggling Music on or off
+		{
+			if audio_is_playing(Bustling_City)
+			{
+				audio_stop_sound(Bustling_City);
+				global.options[0] = "Music: Off"
+			}
+			else
+			{
+				audio_play_sound(Bustling_City, 1, true);
+				global.options[0] = "Music: On";
+			}
+		}
+	
+		if(selected == 1 && mouse_y_gui >= menu_top + spacing && mouse_y_gui < menu_top + spacing * 2) // Change Shader
+		{
+			if (global.shader == xot_cbs_shTritanopia) 
+			{
+				global.shader = "none";
+				global.options[1] = "Colorblind Filter: Off";
+				shader_reset();
+			}
+			else if (global.shader == "none")
+			{
+				global.shader = xot_cbs_shDeuteranopia;	
+				global.options[1] = "Colorblind Filter: Deuteranopia";
+				shader_set(global.shader);
+			}
+			else if (global.shader == xot_cbs_shDeuteranopia)
+			{
+				global.shader = xot_cbs_shProtanopia;	
+				global.options[1] = "Colorblind Filter: Protanopia";
+				shader_set(global.shader);
+			}
+			else if (global.shader == xot_cbs_shProtanopia)
+			{
+				global.shader = xot_cbs_shTritanopia;	
+				global.options[1] = "Colorblind Filter: Tritanopia";
+				shader_set(global.shader);
+			}
+		}
+	
+		if(selected == 2 && mouse_y_gui >= menu_top + spacing * 2 && mouse_y_gui < menu_top + spacing * 3) // Toggling Full Screen on/off
+		{
+			if window_get_fullscreen()
+			{
+				window_set_fullscreen(false);
+				global.options[2] = "Fullscreen: Off";
+			}
+			else
+			{
+				window_set_fullscreen(true);
+				global.options[2] = "Fullscreen: On";
+			}
+		}
+		if(selected == 5 && mouse_y_gui >= menu_top + spacing * 5 && mouse_y_gui < menu_bottom) // Exit to menu
+		{
+			draw = false;
+			if(instance_exists(obj_speed_slider))
+				obj_speed_slider.draw = false;
+			obj_Transition.target = menu_room;
+			SlideTransition(TRANS_MODE.GOTO);
+		}
 }
 else if (mouse_y_gui <= menu_bottom) && (mouse_y_gui >= menu_top) && (mouse_x_gui >= 700 && mouse_x_gui <= 1300) && !moving {
 	if (mouse_check_button_pressed(mb_left)) {

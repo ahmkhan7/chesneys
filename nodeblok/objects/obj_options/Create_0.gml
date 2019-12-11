@@ -86,7 +86,7 @@ downButt = vk_down;
 confirmButt = vk_enter;
 
 menu_itemheight = font_get_size(fnt_menu);
-menu_top = (height/2-150) - 100;
+menu_top = (height/2-160) - 100;
 menu_bottom = menu_top + (spacing*array_length_1d(global.options));
 
 //Variables that store previous mouse position

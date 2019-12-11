@@ -42,9 +42,9 @@
 	//to make the ingredient
 	if(num_attempts - 5 > 0 && num_attempts - 5 <= 5)
 		earned_coins -= earned_coins * 0.20;
-	else if(num_attempts - 5 > 6 && num_attempts - 5 <= 10)
+	else if(num_attempts - 5 >= 6 && num_attempts - 5 <= 10)
 		earned_coins -= earned_coins * 0.40;
-	else if(num_attempts > 11)
+	else if(num_attempts - 5 >= 11)
 		earned_coins -= earned_coins * 0.70; 
 	
 	//Return earned_coins as a truncated double

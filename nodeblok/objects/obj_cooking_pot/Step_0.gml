@@ -11,5 +11,6 @@ if(create_ds) {
 		ds_map_add(recipe_ds, object_get_name(recipe_ingred[0]), recipe_ingred[1]);
 	}
 	num_attempts = 0;
+	wrong_ingredients = 0;
 	create_ds = false;
 }
