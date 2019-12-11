@@ -58,4 +58,4 @@ else if(attempts >= 11)
 	earned_coins -= earned_coins * 0.70; 
 
 draw_sprite_ext(spr_coin, image_index,  x + indent , y + 245 + spacing*5, .4, .4, 0, c_white, 1);
-draw_text_color(x + indent*2, y + 275 + spacing*5, "Reward: " +  string(earned_coins), c_blue, c_red, c_blue, c_red, 1);
+draw_text_color(x + indent*2, y + 275 + spacing*5, "Reward: " +  string(floor(earned_coins)), c_blue, c_red, c_blue, c_red, 1);

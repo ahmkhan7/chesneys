@@ -11,7 +11,7 @@
         "3094bc01-bcb8-4f78-8579-5684fe421f5d"
     ],
     "filterType": "GMSound",
-    "folderName": "Menu Voice Overs",
+    "folderName": "menu_voiceovers",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
